@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BIU</title>
+    <link rel="shortcut icon" href="./assets/governmentOfBihar.webp" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.0.4/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tw-elements/css/tw-elements.min.css" />
+    <script src="https://cdn.tailwindcss.com/3.3.0"></script>
+    <script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                fontFamily: {
+                    sans: ["Roboto", "sans-serif"],
+                    body: ["Roboto", "sans-serif"],
+                    mono: ["ui-monospace", "monospace"],
+                },
+            },
+            corePlugins: {
+                preflight: false,
+            },
+        };
+    </script>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body class="box-border overflow-x-hidden">
+    <section class="min-h-screen m-0 p-0">
+        <header class="w-full">
+            <div class="bg-primary-blue flex justify-between items-center text-white text-xs md:text-inherit">
+                <ul class="flex text-white">
+                    <li class="md:py-2 md:px-4 py-1 px-2 border-r border-white cursor-pointer">Home</li>
+                    <li class="md:py-2 md:px-4 py-1 px-2 cursor-pointer">Contact Us</li>
+                </ul>
+                <ul class="flex text-white">
+                    <li class="md:py-2 md:px-4 py-1 px-2 border-r border-l border-white cursor-pointer">Fee Structure
+                    </li>
+                    <li class="md:py-2 md:px-4 py-1 px-2 border-r border-white cursor-pointer">Placement</li>
+                    <li class="md:py-2 md:px-4 py-1 px-2 border-r border-white cursor-pointer">Recruitment</li>
+                    <li class="md:py-2 md:px-4 py-1 px-2">FAQ</li>
+                </ul>
+            </div>
+
+            <div class="w-full min-h-32 md:min-h-36 flex flex-wrap justify-center items-center py-2">
+                <div class="w-fit h-full flex">
+                    <img src="./assets/governmentOfBihar.webp" alt="governmentOfBihar logo"
+                        class="w-28 md:w-32 aspect-square object-cover">
+                    <img src="./assets/BEU_LOGO_-_FINIAL_APPROVED.png" alt="BEU Logo"
+                        class="w-32 md:w-36 object-cover mr-3">
+                </div>
+
+                <div class="font-secondary-color">
+                    <h2 class="text-xl md:text-4xl font-bold">Bihar Engineering University, Patna</h2>
+                    <h4 class="text-lg md:text-3xl font-semibold">Government of Bihar</h4>
+                </div>
+            </div>
+
+            <nav class="bg-secondary-blue dark:bg-gray-900 dark:border-gray-700">
+                <div class="w-full flex justify-between mx-auto md:m-0 px-4 ">
+                    <div class="block md:hidden"></div>
+
+                    <div class="hidden w-full md:flex md:justify-between md:items-center flex-wrap "
+                        id="navbar-dropdown">
+                        <ul
+                            class="flex flex-col flex-wrap font-medium rtl:space-x-reverse md:flex-row bg-secondary-blue dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+                            <li class="blue-tab inline-block py-2">
+                                <a href="#" class="block px-3 text-white" aria-current="page">Home</a>
+                            </li>
+
+                            <li class="py-2 inline-block blue-tab">
+
+                                <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar"
+                                    data-dropdown-trigger="hover" class="flex items-center px-3 text-white">About Us
+                                    <svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true"
+                                        xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                            stroke-width="2" d="m1 1 4 4 4-4" />
+                                    </svg></button>
+
+                                <!-- Dropdown menu -->
+                                <div id="dropdownNavbar"
+                                    class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow-sm dark:bg-gray-700 dark:divide-gray-600 px-3">
+                                    <ul class="py-2 px-4" aria-labelledby="dropdownLargeButton">
+                                        <li>
+                                            <a href="#"
+                                                class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Vision</a>
+                                        </li>
+                                        <li>
+                                            <a href="#"
+                                                class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Mission</a>
+                                        </li>
+                                        <li>
+                                            <a href="#"
+                                                class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Objective</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+
+                            <li class="py-2 blue-tab">
+                                <button id="organizationNavbarLink" data-dropdown-toggle="organizationNavbarMenu"
+                                    data-dropdown-trigger="hover"
+                                    class="flex items-center justify-between px-3 text-white">Organization
+                                    Structure
+                                    <svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true"
+                                        xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                            stroke-width="2" d="m1 1 4 4 4-4" />
+                                    </svg></button>
+                                <!-- Dropdown menu -->
+                                <div id="organizationNavbarMenu"
+                                    class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow-sm dark:bg-gray-700 dark:divide-gray-600 px-3">
+                                    <ul class="py-2 px-4" aria-labelledby="dropdownLargeButton">
+                                        <li>
+                                            <a href="#"
+                                                class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Chancellor</a>
+                                        </li>
+                                        <li>
+                                            <a href="#"
+                                                class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Vice
+                                                Chancellor</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+
+                            <li class="py-2 blue-tab">
+                                <button id="affiliatedCollegesLink" data-dropdown-toggle="affiliatedCollegesMenu"
+                                    data-dropdown-trigger="hover"
+                                    class="flex items-center justify-between px-3 text-white">Affiliation
+                                    <svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true"
+                                        xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                            stroke-width="2" d="m1 1 4 4 4-4" />
+                                    </svg></button>
+                                <!-- Dropdown menu -->
+                                <div id="affiliatedCollegesMenu"
+                                    class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow-sm dark:bg-gray-700 dark:divide-gray-600 px-3">
+                                    <ul class="py-2 px-4" aria-labelledby="dropdownLargeButton">
+                                        <li>
+                                            <a href="#"
+                                                class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Affiliated
+                                                Colleges</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+
+                            <li class="py-2 blue-tab">
+                                <button id="academicsLink" data-dropdown-toggle="academicsMenu"
+                                    data-dropdown-trigger="hover"
+                                    class="flex items-center justify-between px-3 text-white">Academics
+                                    <svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true"
+                                        xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                            stroke-width="2" d="m1 1 4 4 4-4" />
+                                    </svg></button>
+                                <!-- Dropdown menu -->
+                                <div id="academicsMenu"
+                                    class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow-sm dark:bg-gray-700 dark:divide-gray-600 px-3">
+                                    <ul class="py-2 px-4" aria-labelledby="dropdownLargeButton">
+                                        <li>
+                                            <a href="#"
+                                                class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Programs</a>
+                                        </li>
+                                        <li>
+                                            <a href="#"
+                                                class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Board
+                                                of Studies</a>
+                                        </li>
+                                        <li>
+                                            <a href="#"
+                                                class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Syllabus</a>
+                                        </li>
+                                        <li>
+                                            <a href="#"
+                                                class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Academic
+                                                Calendar</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+
+                            <li class="blue-tab inline-block py-2"">
+                                <a href=" #" class="block px-3 text-white" aria-current="page">Act</a>
+                            </li>
+
+                            <li class="blue-tab inline-block py-2"">
+                                <a href=" #" class="block px-3 text-white" aria-current="page">Circular</a>
+                            </li>
+
+                            <li class="blue-tab inline-block py-2"">
+                                <a href=" #" class="block px-3 text-white" aria-current="page">Notification</a>
+                            </li>
+
+                            <li class="blue-tab inline-block py-2"">
+                                <a href=" #" class="block px-3 text-white" aria-current="page">Letter</a>
+                            </li>
+
+                            <li class="blue-tab inline-block py-2"">
+                                <a href=" #" class="block px-3 text-white" aria-current="page">Gallery</a>
+                            </li>
+                        </ul>
+                        <div class="blue-tab py-2">
+                            <a href="#" class="block px-3 text-white" aria-current="page">Login</a>
+                        </div>
+                    </div>
+                    <button data-collapse-toggle="navbar-dropdown" type="button"
+                        class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-white rounded-lg md:hidden hover:bg-gray-300 hover:text-black focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+                        aria-controls="navbar-dropdown" aria-expanded="false">
+                        <span class="sr-only">Open main menu</span>
+                        <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                            viewBox="0 0 17 14">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M1 1h15M1 7h15M1 13h15" />
+                        </svg>
+                    </button>
+                </div>
+            </nav>
+
+
+        </header>
+
+        <section>
+
+            <div id="carouselExampleCrossfade" class="relative" data-twe-carousel-init data-twe-ride="carousel">
+                <!--Carousel indicators-->
+                <div class="absolute inset-x-0 bottom-0 z-[2] mx-[15%] mb-4 flex list-none justify-center p-0"
+                    data-twe-carousel-indicators>
+                    <button type="button" data-twe-target="#carouselExampleCrossfade" data-twe-slide-to="0"
+                        data-twe-carousel-active
+                        class="mx-[3px] box-content h-[3px] w-[30px] flex-initial cursor-pointer border-0 border-y-[10px] border-solid border-transparent bg-white bg-clip-padding p-0 -indent-[999px] opacity-50 transition-opacity duration-[600ms] ease-[cubic-bezier(0.25,0.1,0.25,1.0)] motion-reduce:transition-none focus:outline-none"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-twe-target="#carouselExampleCrossfade" data-twe-slide-to="1"
+                        class="mx-[3px] box-content h-[3px] w-[30px] flex-initial cursor-pointer border-0 border-y-[10px] border-solid border-transparent bg-white bg-clip-padding p-0 -indent-[999px] opacity-50 transition-opacity duration-[600ms] ease-[cubic-bezier(0.25,0.1,0.25,1.0)] motion-reduce:transition-none focus:outline-none"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-twe-target="#carouselExampleCrossfade" data-twe-slide-to="2"
+                        class="mx-[3px] box-content h-[3px] w-[30px] flex-initial cursor-pointer border-0 border-y-[10px] border-solid border-transparent bg-white bg-clip-padding p-0 -indent-[999px] opacity-50 transition-opacity duration-[600ms] ease-[cubic-bezier(0.25,0.1,0.25,1.0)] motion-reduce:transition-none focus:outline-none"
+                        aria-label="Slide 3"></button>
+                </div>
+
+                <!--Carousel items-->
+                <div
+                    class="relative w-full h-50 md:h-80 overflow-hidden after:clear-both after:block after:content-['']">
+                    <!--First item-->
+                    <div class="relative float-left -mr-[100%] w-full h-full !transform-none opacity-0 transition-opacity duration-[600ms] ease-in-out motion-reduce:transition-none"
+                        data-twe-carousel-fade data-twe-carousel-item data-twe-carousel-active>
+                        <img src="./assets/bakhtiyarpur-college-of-engineering-bakhtiarpur-patna-colleges-Z1Xp52eGd3.webp"
+                            class="w-full h-full object-cover" alt="Wild Landscape" />
+                    </div>
+                    <!--Second item-->
+                    <div class="relative float-left -mr-[100%] hidden w-full h-full !transform-none opacity-0 transition-opacity duration-[600ms] ease-in-out motion-reduce:transition-none"
+                        data-twe-carousel-fade data-twe-carousel-item>
+                        <img src="./assets/SITBihar.webp" class=" w-full h-full object-cover" alt="Camera" />
+                    </div>
+                    <!--Third item-->
+                    <div class="relative float-left -mr-[100%] hidden w-full h-full !transform-none opacity-0 transition-opacity duration-[600ms] ease-in-out motion-reduce:transition-none"
+                        data-twe-carousel-fade data-twe-carousel-item>
+                        <img src="./assets/indian-institute-of-technology-iit-patna.avif"
+                            class=" w-full h-full object-cover" alt="Exotic Fruits" />
+                    </div>
+                </div>
+
+                <!--Carousel controls - prev item-->
+                <button
+                    class="absolute bottom-0 left-0 top-0 z-[1] flex w-[15%] items-center justify-center border-0 bg-none p-0 text-center text-white opacity-50 transition-opacity duration-150 ease-[cubic-bezier(0.25,0.1,0.25,1.0)] hover:text-white hover:no-underline hover:opacity-90 hover:outline-none focus:text-white focus:no-underline focus:opacity-90 focus:outline-none motion-reduce:transition-none"
+                    type="button" data-twe-target="#carouselExampleCrossfade" data-twe-slide="prev">
+                    <span class="inline-block h-8 w-8">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="h-6 w-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
+                        </svg>
+                    </span>
+                    <span
+                        class="!absolute !-m-px !h-px !w-px !overflow-hidden !whitespace-nowrap !border-0 !p-0 ![clip:rect(0,0,0,0)]">Previous</span>
+                </button>
+                <!--Carousel controls - next item-->
+                <button
+                    class="absolute bottom-0 right-0 top-0 z-[1] flex w-[15%] items-center justify-center border-0 bg-none p-0 text-center text-white opacity-50 transition-opacity duration-150 ease-[cubic-bezier(0.25,0.1,0.25,1.0)] hover:text-white hover:no-underline hover:opacity-90 hover:outline-none focus:text-white focus:no-underline focus:opacity-90 focus:outline-none motion-reduce:transition-none"
+                    type="button" data-twe-target="#carouselExampleCrossfade" data-twe-slide="next">
+                    <span class="inline-block h-8 w-8">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="h-6 w-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                        </svg>
+                    </span>
+                    <span
+                        class="!absolute !-m-px !h-px !w-px !overflow-hidden !whitespace-nowrap !border-0 !p-0 ![clip:rect(0,0,0,0)]">Next</span>
+                </button>
+            </div>
+            <div class="bg-secondary-blue text-white py-3 flex min-w-max
+            ">
+                <div class="marquee [&>span]:p-5">
+                    <span>
+                        PHD Notification
+                    </span>
+                    <span>
+                        Admission Opens
+                    </span>
+                    <span>
+                        Registration opens for all batches
+                    </span>
+                    <span>
+                        Placements will starts from April
+                    </span>
+                    <span>
+                        Mega coding events coming up
+                    </span>
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="flex flex-col md:flex-row md:w-[90%] m-auto md:gap-10
+        ">
+            <div class="flex-1 p-3 md:p-5">
+                <h2 class="text-xl md:text-3xl font-bold relative">
+                    <div class="text-center">
+                        Important <span class="font-seagreen">Information</span>
+                    </div>
+                    <div class="bg-primary-orange h-1 rounded-md w-[15%] mt-1"></div>
+                </h2>
+                <div class="w-full px-2 md:px-5 text-xs md:text-sm mt-4 md:mt-8">
+                    <div class="flex justify-between items-center">
+                        <div class="flex items-center gap-3 md:gap-5">
+                            <img src="./assets/double-quotes.png" alt="double-quote" class="w-10 md:w-16">
+                            <p>PHD Notification</p>
+                        </div>
+                        <div class="gradient p-1 md:p-2 rounded-md font-semibold text-white text-xs">NEW</div>
+                    </div>
+                </div>
+
+                <div class="w-full px-2 md:px-5 text-xs md:text-sm ">
+                    <div class="flex justify-between items-center">
+                        <div class="flex items-center gap-3 md:gap-5">
+                            <img src="./assets/double-quotes.png" alt="double-quote" class="w-10 md:w-16">
+                            <p>PHD Notification</p>
+                        </div>
+                        <div class="gradient p-1 md:p-2 rounded-md font-semibold text-white text-xs">NEW</div>
+                    </div>
+                </div>
+
+                <div class="w-full px-2 md:px-5 text-xs md:text-sm ">
+                    <div class="flex justify-between items-center">
+                        <div class="flex items-center gap-3 md:gap-5">
+                            <img src="./assets/double-quotes.png" alt="double-quote" class="w-10 md:w-16">
+                            <p>PHD Notification</p>
+                        </div>
+                        <div class="gradient p-1 md:p-2 rounded-md font-semibold text-white text-xs">NEW</div>
+                    </div>
+                </div>
+
+                <div class="w-full px-2 md:px-5 text-xs md:text-sm ">
+                    <div class="flex justify-between items-center">
+                        <div class="flex items-center gap-3 md:gap-5">
+                            <img src="./assets/double-quotes.png" alt="double-quote" class="w-10 md:w-16">
+                            <p>PHD Notification</p>
+                        </div>
+                        <div class="gradient p-1 md:p-2 rounded-md font-semibold text-white text-xs">NEW</div>
+                    </div>
+                </div>
+
+                <div class="w-full px-2 md:px-5 text-xs md:text-sm ">
+                    <div class="flex justify-between items-center">
+                        <div class="flex items-center gap-3 md:gap-5">
+                            <img src="./assets/double-quotes.png" alt="double-quote" class="w-10 md:w-16">
+                            <p>PHD Notification</p>
+                        </div>
+                        <div class="gradient p-1 md:p-2 rounded-md font-semibold text-white text-xs">NEW</div>
+                    </div>
+                </div>
+
+                <div class="w-full px-2 md:px-5 text-xs md:text-sm ">
+                    <div class="flex justify-between items-center">
+                        <div class="flex items-center gap-3 md:gap-5">
+                            <img src="./assets/double-quotes.png" alt="double-quote" class="w-10 md:w-16">
+                            <p>PHD Notification</p>
+                        </div>
+                        <div class="gradient p-1 md:p-2 rounded-md font-semibold text-white text-xs">NEW</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex-1 p-5">
+                <h2 class="text-xl md:text-3xl font-bold relative">
+                    <div class="text-center">
+                        Notice <span class="font-seagreen">Board</span>
+                    </div>
+                    <div class="bg-primary-orange h-1 rounded-md w-[15%] mt-1"></div>
+                </h2>
+                <div class="mt-4 md:mt-8" id="notice-board">
+                    <ol class="font-semibold text-xs md:text-sm [&>li]:py-1">
+                        <li class="dotted-blue-border">1.
+                            <a href="http://www.beu-bih.ac.in/BEUP/NoticePdf/08Mar202515140000.pdf">Academic Schedule
+                                for 5th Semester</a>
+                        </li>
+                        <li class="dotted-blue-border">2.
+                            <a href="http://www.beu-bih.ac.in/BEUP/NoticePdf/05Mar202513022128.pdf">List of Qualified
+                                Students for PH.D. Admission Written Test</a>
+                        </li>
+                        <li class="dotted-blue-border">3.
+                            <a href="http://www.beu-bih.ac.in/BEUP/NoticePdf/25Feb202516225576.pdf">
+                                Notice
+                            </a>
+                        </li>
+                        <li class="dotted-blue-border">4.
+                            <a href="http://www.beu-bih.ac.in/BEUP/NoticePdf/15Feb202514581226.pdf">
+                                Notice for Ph.D. Written Test
+                            </a>
+                        </li>
+
+                        <li class="dotted-blue-border">5.
+                            <a href="http://www.beu-bih.ac.in/BEUP/NoticePdf/05Feb202518220173.pdf">
+                                4th Semester Examination 2024 Program
+                            </a>
+                        </li>
+
+                        <li class="dotted-blue-border">6.
+                            <a href="http://www.beu-bih.ac.in/BEUP/NoticePdf/05Feb202518224038.pdf">
+                                7th Semester Examination 2024 Program
+                            </a>
+                        </li>
+
+                        <li class="dotted-blue-border">7.
+                            <a href="http://www.beu-bih.ac.in/BEUP/NoticePdf/25Jan202516015224.pdf">
+                                List of Canidates for PH.D. Admission Written Test
+                            </a>
+                        </li>
+
+                    </ol>
+                </div>
+            </div>
+        </section>
+
+        <section class="flex flex-col md:flex-row bg-blue-200 md:h-40 mb-10 p-4 md:p-0">
+            <div class="flex-1">
+                <div class="flex justify-center items-center h-full">
+                    <div class="text-center font-semibold">
+                        <h2 class="text-xl md:text-3xl font-secondary-color">Admissions 2024-2025</h2>
+                        <hr class="my-2" />
+                        <p class="font-secondary-color text-base md:text-2xl">URL: <span
+                                class="text-sm md:text-lg hover:underline cursor-pointer">BIU2024-2025</span></p>
+
+                    </div>
+                </div>
+            </div>
+            <div
+                class="h-2 md:h-20 w-20 md:w-0 md:m-auto border-b-2 md:border-b-0 md:border-l-4 border-blue-900 border-dotted my-5 mx-auto">
+            </div>
+            <div class="flex-1">
+                <div class="flex justify-center items-center h-full">
+                    <div class="text-center font-semibold">
+                        <h2 class="text-xl md:text-3xl font-secondary-color">Ph.D. Admissions 2024-2025</h2>
+                        <hr class="my-2" />
+                        <p class="font-secondary-color text-base md:text-2xl">URL: <span
+                                class="text-sm md:text-lg hover:underline cursor-pointer">BIUPhd.D.2024-2025</span></p>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="flex flex-col  md:flex-row md:w-[90%] gap-10 md:gap-0 m-auto mb-10">
+            <div class="flex-1 p-5">
+                <h2 class="text-center text-xl md:text-3xl font-semibold">
+                    Student <span class="font-seagreen">Section</span>
+                    <div class="bg-primary-orange h-1 rounded-md w-[15%] mt-1"></div>
+                </h2>
+                <!-- <div class="bg-secondary-blue h-0.5 w-[80%] mx-auto my-3 md:my-5"></div> -->
+                <div class="grid grid-cols-3 gap-1 md:gap-x-3 md:gap-y-4 w-[60%] m-auto [&_p]:text-xs mt-4 md:mt-8">
+                    <div class="h-20 md:h-28 border-b-[1px] md:border-b-2 border-[#00548B] cursor-pointer">
+                        <div class="h-[80%] w-full">
+                            <img src="./assets/computer.png" alt="" class="w-full h-full object-contain">
+                        </div>
+                        <p class="font-secondary-color font-semibold text-center">One View</p>
+                    </div>
+
+                    <div class="h-20 md:h-28 border-b-[1px] md:border-b-2 border-[#00548B] cursor-pointer">
+                        <div class="h-[80%] w-full">
+                            <img src="./assets/complain.png" alt="" class="w-full h-full object-contain">
+                        </div>
+                        <p class="font-secondary-color font-semibold text-center">Grievance</p>
+                    </div>
+
+                    <div class="h-20 md:h-28 border-b-[1px] md:border-b-2 border-[#00548B] cursor-pointer">
+                        <div class="h-[80%] w-full">
+                            <img src="./assets/customer.png" alt="" class="w-full h-full object-contain">
+                        </div>
+                        <p class="font-secondary-color font-semibold text-center">KYC</p>
+                    </div>
+
+                    <div class="h-20 md:h-28 border-b-[1px] md:border-b-2 border-[#00548B] cursor-pointer">
+                        <div class="h-[80%] w-full">
+                            <img src="./assets/documents.png" alt="" class="w-full h-full object-contain">
+                        </div>
+                        <p class="font-secondary-color font-semibold text-center">Exam Form</p>
+                    </div>
+
+                    <div class="h-20 md:h-28 border-b-[1px] md:border-b-2 border-[#00548B] cursor-pointer">
+                        <div class="h-[80%] w-full">
+                            <img src="./assets/relationship.png" alt="" class="w-full h-full object-contain">
+                        </div>
+                        <p class="font-secondary-color font-semibold text-center">Community</p>
+                    </div>
+
+                    <div class="h-20 md:h-28 border-b-[1px] md:border-b-2 border-[#00548B] cursor-pointer">
+                        <div class="h-[80%] w-full">
+                            <img src="./assets/track-mail.png" alt="" class="w-full h-full object-contain">
+                        </div>
+                        <p class="font-secondary-color font-semibold text-center">Track Post</p>
+                    </div>
+
+                    <div class="h-20 md:h-28 border-b-[1px] md:border-b-2 border-[#00548B] cursor-pointer">
+                        <div class="h-[80%] w-full">
+                            <img src="./assets/double-quotes.png" alt="" class="w-full h-full object-contain">
+                        </div>
+                        <p class="font-secondary-color font-semibold text-center">Yojna</p>
+                    </div>
+
+                    <div class="h-20 md:h-28 border-b-[1px] md:border-b-2 border-[#00548B] cursor-pointer">
+                        <div class="h-[80%] w-full">
+                            <img src="./assets/customer.png" alt="" class="w-full h-full object-contain">
+                        </div>
+                        <p class="font-secondary-color font-semibold text-center">Services</p>
+                    </div>
+
+                    <div class="h-20 md:h-28 border-b-[1px] md:border-b-2 border-[#00548B] cursor-pointer">
+                        <div class="h-[80%] w-full">
+                            <img src="./assets/computer.png" alt="" class="w-full h-full object-contain">
+                        </div>
+                        <p class="font-secondary-color font-semibold text-center">Announcement</p>
+                    </div>
+
+
+
+                </div>
+            </div>
+            <div class="flex-1 p-5">
+                <h2 class="text-center text-xl md:text-3xl font-semibold">
+                    Our <span class="font-seagreen">Mentors</span>
+                    <div class="bg-primary-orange h-1 rounded-md w-[15%] mt-1"></div>
+                </h2>
+                <!-- <div class="bg-secondary-blue h-0.5 w-[80%] mx-auto my-3 md:my-5"></div> -->
+                <div class="w-[80%] md:w-[60%] m-auto [&_p]:text-xs [&_p]:md:text-sm mt-4 md:mt-8">
+                    <div class="w-full flex pb-1 gap-2">
+                        <div class="w-[30%] h-28">
+                            <img src="./assets/Chancellor.jpg" alt="" class="w-full h-full object-cover">
+                        </div>
+                        <div class="w-[70%] place-content-end font-secondary-color border-b-2 border-blue-900">
+                            <p>Shri Arif Muhammad Khan</p>
+                            <p>Chancellor and Governor of Bihar</p>
+                        </div>
+                    </div>
+
+                    <div class="w-full flex pb-1 gap-2">
+                        <div class="w-[30%] h-28 ">
+                            <img src="./assets/CM.jpg" alt="" class="w-full h-full object-cover">
+                        </div>
+                        <div class="w-[70%] place-content-end font-secondary-color border-b-2 border-blue-900">
+                            <p>Shri Nitish Kumar</p>
+                            <p>CM of Bihar</p>
+                        </div>
+                    </div>
+
+                    <div class="w-full flex pb-1 gap-2">
+                        <div class="w-[30%] h-28">
+                            <img src="./assets/EducationMinister.webp" alt="" class="w-full h-full object-cover">
+                        </div>
+                        <div class="w-[70%] place-content-end  font-secondary-color border-b-2 border-blue-900">
+                            <p>Shri Sunil Kumar</p>
+                            <p>Education Minister of Bihar</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="mb-10">
+            <div class="bg-secondary-blue text-white py-3 flex min-w-max
+            ">
+                <div class="marquee flex gap-7 [&_img]:w-40">
+                    <img src="./assets/AICTE.png" alt="">
+                    <img src="./assets/AISHE.png" alt="">
+                    <img src="./assets/NPTEL.png" alt="">
+                    <img src="./assets/UGC.png" alt="">
+                </div>
+
+            </div>
+        </section>
+
+        <section class="md:w-[90%] m-auto mb-10">
+            <h2 class="text-center text-xl md:text-3xl font-semibold p-5">
+                College <span class="font-seagreen">Events</span>
+                <div class="bg-primary-orange h-1 rounded-md w-[15%] mt-1"></div>
+            </h2>
+            <!-- <div class="bg-secondary-blue h-0.5 w-[80%] mx-auto my-3 md:my-5"></div> -->
+            <div class="w-[80%] mx-auto">
+                <ul class="[&>li]:text-xs [&>li]:md:text-sm [&_img]:w-5 [&_img]:md:w-8 [&_div]:p-1 [&_div]:md:p-2">
+                    <li class="flex gap-3 items-center text-sm py-2">
+                        <img src="./assets/double-quote.png" alt="" class="w-8 ">
+
+                        "Five-Day National Workshop on Research Methodology" on February 24, 2025, to March 1, 2025 at
+                        Ashoka Institute of Technology And Management
+                    </li>
+
+                    <li class="flex gap-3 items-center text-sm py-2">
+                        <img src="./assets/double-quote.png" alt="" class="w-8 ">
+
+                        Apeejay Festival of Ideas by ignited Minds: 21st and 22nd Feb 2025
+                        <div class="gradient md:p-2 rounded-md font-semibold text-white text-xs">NEW</div>
+                    </li>
+
+                    <li class="flex gap-3 items-center text-sm py-2">
+                        <img src="./assets/double-quote.png" alt="" class="w-8 ">
+
+                        CIPET: IPT-Lucknow is organizing the 16th International Conference on Advancements in Polymeric
+                        Materials (APM-2025) on the theme "Advancements in the Petrochemical Sector & Empowering
+                        Sustainable Development Leading to 'Viksit Bharat'", : 8th to 10th March, 2025
+                    </li>
+
+                    <li class="flex gap-3 items-center text-sm py-2">
+                        <img src="./assets/double-quote.png" alt="" class="w-8 ">
+
+                        "Transformative Trends in Drug Discovery and Delivery: Exploring Next-Generation Therapeutics
+                        and Technologies": 21st and 22nd March 2025
+                        <div class="gradient md:p-2 rounded-md font-semibold text-white text-xs">NEW</div>
+                    </li>
+
+                    <li class="flex gap-3 items-center text-sm py-2">
+                        <img src="./assets/double-quote.png" alt="" class="w-8 ">
+
+                        Apeejay Festival of Ideas by ignited Minds: 21st and 22nd Feb 2025
+                        <div class="gradient md:p-2 rounded-md font-semibold text-white text-xs">NEW</div>
+                    </li>
+                </ul>
+            </div>
+
+        </section>
+
+        <footer class="bg-secondary-blue text-white">
+            <div class="md:w-[90%] m-auto flex [&_p]:opacity-70 [&_h4]:text-base [&_h4]:md:text-lg flex-wrap">
+                <div class="p-2 flex-1">
+                    <h4 class="font-bold text-lg py-4">Bihar University of Engineering, Patna</h4>
+                    <p class="text-xs font-light cursor-pointer">
+                        Bihar Engineering University (BEU), Patna has been established by the Government of Bihar vide
+                        Bihar Engineering University, ACT, 2021 (Act No. 20 of 2021), published in the Bihar Gazette
+                        No.-677 date 09/08/2021.
+                    </p>
+                </div>
+                <div class="p-2 flex-1
+                ">
+                    <h4 class="fond-bold text-lg py-4">Address</h4>
+                    <p class="text-xs font-light cursor-pointer">
+                        Bihar Engineering University, 6th Floor, Examination Block, Aryabhatta Knowledge University,
+                        Mithapur, Patna – 800001, Bihar
+                    </p>
+                </div>
+                <div class="p-2 flex-1">
+                    <h4 class="font-bold text-lg py-4">Useful Links</h4>
+                    <ul class="text-xs [&>li]:py-1 [&>li]:cursor-pointer [&>li]:opacity-70">
+                        <li class="hover:underline hover:opacity-100">Bihar Government</li>
+                        <li class="hover:underline hover:opacity-100">AICTE</li>
+                        <li class="hover:underline hover:opacity-100">UGC</li>
+                        <li class="hover:underline hover:opacity-100">NPTEL</li>
+                    </ul>
+                </div>
+                <div class="p-2 flex-1">
+                    <h4 class="font-bold text-lg py-4">Contact Us</h4>
+                    <p class="text-xs font-light cursor-pointer hover:opacity-100">Phone: <span>0612-2385475</span></p>
+                    <p class="text-xs font-light cursor-pointer hover:opacity-100">Email:
+                        <span>beubihar@gmail.com</span>
+                    </p>
+                </div>
+            </div>
+        </footer>
+
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/tw-elements/js/tw-elements.umd.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
+</body>
+
+</html>
