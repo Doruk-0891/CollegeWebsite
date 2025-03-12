@@ -35,18 +35,23 @@
 <body class="box-border overflow-x-hidden">
     <section class="min-h-screen m-0 p-0">
         <header class="w-full">
-            <div class="bg-primary-blue flex justify-between items-center text-white text-xs md:text-inherit">
+            <div class="bg-primary-blue flex justify-center items-center text-white text-xs md:text-inherit">
                 <ul class="flex text-white">
                     <li class="md:py-2 md:px-4 py-1 px-2 border-r border-white cursor-pointer">Home</li>
                     <li class="md:py-2 md:px-4 py-1 px-2 cursor-pointer">Contact Us</li>
-                </ul>
-                <ul class="flex text-white">
                     <li class="md:py-2 md:px-4 py-1 px-2 border-r border-l border-white cursor-pointer">Fee Structure
                     </li>
                     <li class="md:py-2 md:px-4 py-1 px-2 border-r border-white cursor-pointer">Placement</li>
                     <li class="md:py-2 md:px-4 py-1 px-2 border-r border-white cursor-pointer">Recruitment</li>
                     <li class="md:py-2 md:px-4 py-1 px-2">FAQ</li>
                 </ul>
+                <!-- <ul class="flex text-white">
+                    <li class="md:py-2 md:px-4 py-1 px-2 border-r border-l border-white cursor-pointer">Fee Structure
+                    </li>
+                    <li class="md:py-2 md:px-4 py-1 px-2 border-r border-white cursor-pointer">Placement</li>
+                    <li class="md:py-2 md:px-4 py-1 px-2 border-r border-white cursor-pointer">Recruitment</li>
+                    <li class="md:py-2 md:px-4 py-1 px-2">FAQ</li>
+                </ul> -->
             </div>
 
             <div class="w-full min-h-32 md:min-h-36 flex flex-wrap justify-center items-center py-2">
@@ -229,75 +234,215 @@
 
         </header>
 
-        <section>
+        <section class="flex lg:h-80 flex-col lg:flex-row">
 
-            <div id="carouselExampleCrossfade" class="relative" data-twe-carousel-init data-twe-ride="carousel">
-                <!--Carousel indicators-->
-                <div class="absolute inset-x-0 bottom-0 z-[2] mx-[15%] mb-4 flex list-none justify-center p-0"
-                    data-twe-carousel-indicators>
-                    <button type="button" data-twe-target="#carouselExampleCrossfade" data-twe-slide-to="0"
-                        data-twe-carousel-active
-                        class="mx-[3px] box-content h-[3px] w-[30px] flex-initial cursor-pointer border-0 border-y-[10px] border-solid border-transparent bg-white bg-clip-padding p-0 -indent-[999px] opacity-50 transition-opacity duration-[600ms] ease-[cubic-bezier(0.25,0.1,0.25,1.0)] motion-reduce:transition-none focus:outline-none"
-                        aria-current="true" aria-label="Slide 1"></button>
-                    <button type="button" data-twe-target="#carouselExampleCrossfade" data-twe-slide-to="1"
-                        class="mx-[3px] box-content h-[3px] w-[30px] flex-initial cursor-pointer border-0 border-y-[10px] border-solid border-transparent bg-white bg-clip-padding p-0 -indent-[999px] opacity-50 transition-opacity duration-[600ms] ease-[cubic-bezier(0.25,0.1,0.25,1.0)] motion-reduce:transition-none focus:outline-none"
-                        aria-label="Slide 2"></button>
-                    <button type="button" data-twe-target="#carouselExampleCrossfade" data-twe-slide-to="2"
-                        class="mx-[3px] box-content h-[3px] w-[30px] flex-initial cursor-pointer border-0 border-y-[10px] border-solid border-transparent bg-white bg-clip-padding p-0 -indent-[999px] opacity-50 transition-opacity duration-[600ms] ease-[cubic-bezier(0.25,0.1,0.25,1.0)] motion-reduce:transition-none focus:outline-none"
-                        aria-label="Slide 3"></button>
+            <div class="lg:w-[70%] lg:h-full">
+                <div id="carouselExampleCrossfade" class="relative h-auto" data-twe-carousel-init
+                    data-twe-ride="carousel">
+                    <!--Carousel indicators-->
+                    <div class="absolute inset-x-0 bottom-0 z-[2] mx-[15%] mb-4 flex list-none justify-center p-0"
+                        data-twe-carousel-indicators>
+                        <button type="button" data-twe-target="#carouselExampleCrossfade" data-twe-slide-to="0"
+                            data-twe-carousel-active
+                            class="mx-[3px] box-content h-[3px] w-[30px] flex-initial cursor-pointer border-0 border-y-[10px] border-solid border-transparent bg-white bg-clip-padding p-0 -indent-[999px] opacity-50 transition-opacity duration-[600ms] ease-[cubic-bezier(0.25,0.1,0.25,1.0)] motion-reduce:transition-none focus:outline-none"
+                            aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-twe-target="#carouselExampleCrossfade" data-twe-slide-to="1"
+                            class="mx-[3px] box-content h-[3px] w-[30px] flex-initial cursor-pointer border-0 border-y-[10px] border-solid border-transparent bg-white bg-clip-padding p-0 -indent-[999px] opacity-50 transition-opacity duration-[600ms] ease-[cubic-bezier(0.25,0.1,0.25,1.0)] motion-reduce:transition-none focus:outline-none"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-twe-target="#carouselExampleCrossfade" data-twe-slide-to="2"
+                            class="mx-[3px] box-content h-[3px] w-[30px] flex-initial cursor-pointer border-0 border-y-[10px] border-solid border-transparent bg-white bg-clip-padding p-0 -indent-[999px] opacity-50 transition-opacity duration-[600ms] ease-[cubic-bezier(0.25,0.1,0.25,1.0)] motion-reduce:transition-none focus:outline-none"
+                            aria-label="Slide 3"></button>
+                    </div>
+
+                    <!--Carousel items-->
+                    <div
+                        class="relative w-full h-50 md:h-80 overflow-hidden after:clear-both after:block after:content-['']">
+                        <!--First item-->
+                        <div class="relative float-left -mr-[100%] w-full h-full !transform-none opacity-0 transition-opacity duration-[600ms] ease-in-out motion-reduce:transition-none"
+                            data-twe-carousel-fade data-twe-carousel-item data-twe-carousel-active>
+                            <img src="./assets/bakhtiyarpur-college-of-engineering-bakhtiarpur-patna-colleges-Z1Xp52eGd3.webp"
+                                class="w-full h-full object-cover" alt="Wild Landscape" />
+                        </div>
+                        <!--Second item-->
+                        <div class="relative float-left -mr-[100%] hidden w-full h-full !transform-none opacity-0 transition-opacity duration-[600ms] ease-in-out motion-reduce:transition-none"
+                            data-twe-carousel-fade data-twe-carousel-item>
+                            <img src="./assets/SITBihar.webp" class=" w-full h-full object-cover" alt="Camera" />
+                        </div>
+                        <!--Third item-->
+                        <div class="relative float-left -mr-[100%] hidden w-full h-full !transform-none opacity-0 transition-opacity duration-[600ms] ease-in-out motion-reduce:transition-none"
+                            data-twe-carousel-fade data-twe-carousel-item>
+                            <img src="./assets/indian-institute-of-technology-iit-patna.avif"
+                                class=" w-full h-full object-cover" alt="Exotic Fruits" />
+                        </div>
+                    </div>
+
+                    <!--Carousel controls - prev item-->
+                    <button
+                        class="absolute bottom-0 left-0 top-0 z-[1] flex w-[15%] items-center justify-center border-0 bg-none p-0 text-center text-white opacity-50 transition-opacity duration-150 ease-[cubic-bezier(0.25,0.1,0.25,1.0)] hover:text-white hover:no-underline hover:opacity-90 hover:outline-none focus:text-white focus:no-underline focus:opacity-90 focus:outline-none motion-reduce:transition-none"
+                        type="button" data-twe-target="#carouselExampleCrossfade" data-twe-slide="prev">
+                        <span class="inline-block h-8 w-8">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" class="h-6 w-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
+                            </svg>
+                        </span>
+                        <span
+                            class="!absolute !-m-px !h-px !w-px !overflow-hidden !whitespace-nowrap !border-0 !p-0 ![clip:rect(0,0,0,0)]">Previous</span>
+                    </button>
+                    <!--Carousel controls - next item-->
+                    <button
+                        class="absolute bottom-0 right-0 top-0 z-[1] flex w-[15%] items-center justify-center border-0 bg-none p-0 text-center text-white opacity-50 transition-opacity duration-150 ease-[cubic-bezier(0.25,0.1,0.25,1.0)] hover:text-white hover:no-underline hover:opacity-90 hover:outline-none focus:text-white focus:no-underline focus:opacity-90 focus:outline-none motion-reduce:transition-none"
+                        type="button" data-twe-target="#carouselExampleCrossfade" data-twe-slide="next">
+                        <span class="inline-block h-8 w-8">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" class="h-6 w-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                            </svg>
+                        </span>
+                        <span
+                            class="!absolute !-m-px !h-px !w-px !overflow-hidden !whitespace-nowrap !border-0 !p-0 ![clip:rect(0,0,0,0)]">Next</span>
+                    </button>
                 </div>
 
-                <!--Carousel items-->
-                <div
-                    class="relative w-full h-50 md:h-80 overflow-hidden after:clear-both after:block after:content-['']">
-                    <!--First item-->
-                    <div class="relative float-left -mr-[100%] w-full h-full !transform-none opacity-0 transition-opacity duration-[600ms] ease-in-out motion-reduce:transition-none"
-                        data-twe-carousel-fade data-twe-carousel-item data-twe-carousel-active>
-                        <img src="./assets/bakhtiyarpur-college-of-engineering-bakhtiarpur-patna-colleges-Z1Xp52eGd3.webp"
-                            class="w-full h-full object-cover" alt="Wild Landscape" />
-                    </div>
-                    <!--Second item-->
-                    <div class="relative float-left -mr-[100%] hidden w-full h-full !transform-none opacity-0 transition-opacity duration-[600ms] ease-in-out motion-reduce:transition-none"
-                        data-twe-carousel-fade data-twe-carousel-item>
-                        <img src="./assets/SITBihar.webp" class=" w-full h-full object-cover" alt="Camera" />
-                    </div>
-                    <!--Third item-->
-                    <div class="relative float-left -mr-[100%] hidden w-full h-full !transform-none opacity-0 transition-opacity duration-[600ms] ease-in-out motion-reduce:transition-none"
-                        data-twe-carousel-fade data-twe-carousel-item>
-                        <img src="./assets/indian-institute-of-technology-iit-patna.avif"
-                            class=" w-full h-full object-cover" alt="Exotic Fruits" />
-                    </div>
-                </div>
-
-                <!--Carousel controls - prev item-->
-                <button
-                    class="absolute bottom-0 left-0 top-0 z-[1] flex w-[15%] items-center justify-center border-0 bg-none p-0 text-center text-white opacity-50 transition-opacity duration-150 ease-[cubic-bezier(0.25,0.1,0.25,1.0)] hover:text-white hover:no-underline hover:opacity-90 hover:outline-none focus:text-white focus:no-underline focus:opacity-90 focus:outline-none motion-reduce:transition-none"
-                    type="button" data-twe-target="#carouselExampleCrossfade" data-twe-slide="prev">
-                    <span class="inline-block h-8 w-8">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                            stroke="currentColor" class="h-6 w-6">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
-                        </svg>
-                    </span>
-                    <span
-                        class="!absolute !-m-px !h-px !w-px !overflow-hidden !whitespace-nowrap !border-0 !p-0 ![clip:rect(0,0,0,0)]">Previous</span>
-                </button>
-                <!--Carousel controls - next item-->
-                <button
-                    class="absolute bottom-0 right-0 top-0 z-[1] flex w-[15%] items-center justify-center border-0 bg-none p-0 text-center text-white opacity-50 transition-opacity duration-150 ease-[cubic-bezier(0.25,0.1,0.25,1.0)] hover:text-white hover:no-underline hover:opacity-90 hover:outline-none focus:text-white focus:no-underline focus:opacity-90 focus:outline-none motion-reduce:transition-none"
-                    type="button" data-twe-target="#carouselExampleCrossfade" data-twe-slide="next">
-                    <span class="inline-block h-8 w-8">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                            stroke="currentColor" class="h-6 w-6">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
-                        </svg>
-                    </span>
-                    <span
-                        class="!absolute !-m-px !h-px !w-px !overflow-hidden !whitespace-nowrap !border-0 !p-0 ![clip:rect(0,0,0,0)]">Next</span>
-                </button>
             </div>
-            <div class="bg-secondary-blue text-white py-3 flex min-w-max
+
+            <article class="lg:w-[30%] h-full">
+                <div class="flex flex-col md:flex-row h-full overflow-hidden
             ">
+                    <div class="flex-1 bg-blue-200 font-secondary-color">
+                        <h2 class="font-bold relative bg-primary-blue text-white p-2">
+                            Important Information
+                            <!-- <div class="text-center font-secondary-color">
+                            </div> -->
+                            <!-- <div class="bg-primary-blue h-1 rounded-md w-[15%] mt-1"></div> -->
+                        </h2>
+                        <!-- <div class="bg-secondary-blue h-0.5 w-[80%] mx-auto my-3 md:my-5"></div> -->
+                        <div class="w-full py-1 px-2 text-xs md:text-sm">
+                            <div class="flex justify-between items-center">
+                                <div class="flex items-center gap-3 text-xs">
+                                    <img src="./assets/double-quote.png" alt="double-quote" class="w-5" />
+                                    <p>PHD Notification</p>
+                                </div>
+                                <div class="gradient p-1 rounded-md font-semibold text-white text-xs">NEW</div>
+                            </div>
+                        </div>
+
+                        <div class="w-full py-1 px-2 text-xs md:text-sm">
+                            <div class="flex justify-between items-center">
+                                <div class="flex items-center gap-3 text-xs">
+                                    <img src="./assets/double-quote.png" alt="double-quote" class="w-5" />
+                                    <p>PHD Notification</p>
+                                </div>
+                                <div class="gradient p-1 rounded-md font-semibold text-white text-xs">NEW</div>
+                            </div>
+                        </div>
+
+                        <div class="w-full py-1 px-2 text-xs md:text-sm">
+                            <div class="flex justify-between items-center">
+                                <div class="flex items-center gap-3 text-xs">
+                                    <img src="./assets/double-quote.png" alt="double-quote" class="w-5" />
+                                    <p>PHD Notification</p>
+                                </div>
+                                <div class="gradient p-1 rounded-md font-semibold text-white text-xs">NEW</div>
+                            </div>
+                        </div>
+
+                        <div class="w-full py-1 px-2 text-xs md:text-sm">
+                            <div class="flex justify-between items-center">
+                                <div class="flex items-center gap-3 text-xs">
+                                    <img src="./assets/double-quote.png" alt="double-quote" class="w-5" />
+                                    <p>PHD Notification</p>
+                                </div>
+                                <div class="gradient p-1 rounded-md font-semibold text-white text-xs">NEW</div>
+                            </div>
+                        </div>
+
+                        <div class="w-full py-1 px-2 text-xs md:text-sm">
+                            <div class="flex justify-between items-center">
+                                <div class="flex items-center gap-3 text-xs">
+                                    <img src="./assets/double-quote.png" alt="double-quote" class="w-5" />
+                                    <p>PHD Notification</p>
+                                </div>
+                                <div class="gradient p-1 rounded-md font-semibold text-white text-xs">NEW</div>
+                            </div>
+                        </div>
+
+                        <div class="w-full py-1 px-2 text-xs md:text-sm">
+                            <div class="flex justify-between items-center">
+                                <div class="flex items-center gap-3 text-xs">
+                                    <img src="./assets/double-quote.png" alt="double-quote" class="w-5" />
+                                    <p>PHD Notification</p>
+                                </div>
+                                <div class="gradient p-1 rounded-md font-semibold text-white text-xs">NEW</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="flex-1 bg-[#FAF2BA] font-secondary-color flex flex-col">
+                        <h2 class="font-bold relative bg-[#fced80] font-secondary-color p-2">
+                            Notice Board
+                            <!-- <div class="text-center font-secondary-color">
+                            </div> -->
+                            <!-- <div class="bg-primary-blue h-1 rounded-md w-[15%] mt-1"></div> -->
+                        </h2>
+                        <!-- <div class="bg-secondary-blue h-0.5 w-[80%] mx-auto my-3 md:my-5"></div> -->
+                        <div class="flex flex-col justify-between gap-2 h-full p-2">
+                            <div id="notice-board">
+                                <ol class="font-semibold text-xs [&>li]:py-1">
+                                    <li class="dotted-blue-border">1.
+                                        <a href="http://www.beu-bih.ac.in/BEUP/NoticePdf/08Mar202515140000.pdf">Academic
+                                            Schedule
+                                            for 5th Semester</a>
+                                    </li>
+                                    <li class="dotted-blue-border">2.
+                                        <a href="http://www.beu-bih.ac.in/BEUP/NoticePdf/05Mar202513022128.pdf">List of
+                                            Qualified
+                                            Students for PH.D. Admission Written Test</a>
+                                    </li>
+                                    <li class="dotted-blue-border">3.
+                                        <a href="http://www.beu-bih.ac.in/BEUP/NoticePdf/25Feb202516225576.pdf">
+                                            Notice
+                                        </a>
+                                    </li>
+                                    <li class="dotted-blue-border">4.
+                                        <a href="http://www.beu-bih.ac.in/BEUP/NoticePdf/15Feb202514581226.pdf">
+                                            Notice for Ph.D. Written Test
+                                        </a>
+                                    </li>
+
+                                    <li class="dotted-blue-border">5.
+                                        <a href="http://www.beu-bih.ac.in/BEUP/NoticePdf/05Feb202518220173.pdf">
+                                            4th Semester Examination 2024 Program
+                                        </a>
+                                    </li>
+
+                                    <li class="dotted-blue-border">6.
+                                        <a href="http://www.beu-bih.ac.in/BEUP/NoticePdf/05Feb202518224038.pdf">
+                                            7th Semester Examination 2024 Program
+                                        </a>
+                                    </li>
+
+                                </ol>
+                            </div>
+                            <div></div>
+                            <button
+                                class="border border-[#00548B] py-1 font-secondary-color rounded-md hover:bg-[#00548B] hover:text-white text-xs md:text-base w-full">View
+                                All</button>
+                        </div>
+                    </div>
+                </div>
+
+            </article>
+
+
+        </section>
+
+        <article class="bg-secondary-blue text-white flex 
+                [&>*]:py-3">
+            <div class="bg-secondary-blue text-white px-4 z-10">
+                Notices:
+            </div>
+            <div class="min-w-max">
                 <div class="marquee [&>span]:p-5">
                     <span>
                         PHD Notification
@@ -315,138 +460,10 @@
                         Mega coding events coming up
                     </span>
                 </div>
-
             </div>
 
-        </section>
+        </article>
 
-        <section class="flex flex-col md:flex-row md:w-[90%] m-auto md:gap-10
-        ">
-            <div class="flex-1 p-3 md:p-5">
-                <h2 class="text-xl md:text-3xl font-bold relative">
-                    <div class="text-center">
-                        Important <span class="font-seagreen">Information</span>
-                    </div>
-                    <div class="bg-primary-orange h-1 rounded-md w-[15%] mt-1"></div>
-                </h2>
-                <div class="w-full px-2 md:px-5 text-xs md:text-sm mt-4 md:mt-8">
-                    <div class="flex justify-between items-center">
-                        <div class="flex items-center gap-3 md:gap-5">
-                            <img src="./assets/double-quotes.png" alt="double-quote" class="w-10 md:w-16">
-                            <p>PHD Notification</p>
-                        </div>
-                        <div class="gradient p-1 md:p-2 rounded-md font-semibold text-white text-xs">NEW</div>
-                    </div>
-                </div>
-
-                <div class="w-full px-2 md:px-5 text-xs md:text-sm ">
-                    <div class="flex justify-between items-center">
-                        <div class="flex items-center gap-3 md:gap-5">
-                            <img src="./assets/double-quotes.png" alt="double-quote" class="w-10 md:w-16">
-                            <p>PHD Notification</p>
-                        </div>
-                        <div class="gradient p-1 md:p-2 rounded-md font-semibold text-white text-xs">NEW</div>
-                    </div>
-                </div>
-
-                <div class="w-full px-2 md:px-5 text-xs md:text-sm ">
-                    <div class="flex justify-between items-center">
-                        <div class="flex items-center gap-3 md:gap-5">
-                            <img src="./assets/double-quotes.png" alt="double-quote" class="w-10 md:w-16">
-                            <p>PHD Notification</p>
-                        </div>
-                        <div class="gradient p-1 md:p-2 rounded-md font-semibold text-white text-xs">NEW</div>
-                    </div>
-                </div>
-
-                <div class="w-full px-2 md:px-5 text-xs md:text-sm ">
-                    <div class="flex justify-between items-center">
-                        <div class="flex items-center gap-3 md:gap-5">
-                            <img src="./assets/double-quotes.png" alt="double-quote" class="w-10 md:w-16">
-                            <p>PHD Notification</p>
-                        </div>
-                        <div class="gradient p-1 md:p-2 rounded-md font-semibold text-white text-xs">NEW</div>
-                    </div>
-                </div>
-
-                <div class="w-full px-2 md:px-5 text-xs md:text-sm ">
-                    <div class="flex justify-between items-center">
-                        <div class="flex items-center gap-3 md:gap-5">
-                            <img src="./assets/double-quotes.png" alt="double-quote" class="w-10 md:w-16">
-                            <p>PHD Notification</p>
-                        </div>
-                        <div class="gradient p-1 md:p-2 rounded-md font-semibold text-white text-xs">NEW</div>
-                    </div>
-                </div>
-
-                <div class="w-full px-2 md:px-5 text-xs md:text-sm ">
-                    <div class="flex justify-between items-center">
-                        <div class="flex items-center gap-3 md:gap-5">
-                            <img src="./assets/double-quotes.png" alt="double-quote" class="w-10 md:w-16">
-                            <p>PHD Notification</p>
-                        </div>
-                        <div class="gradient p-1 md:p-2 rounded-md font-semibold text-white text-xs">NEW</div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="flex-1 p-5">
-                <h2 class="text-xl md:text-3xl font-bold relative">
-                    <div class="text-center">
-                        Notice <span class="font-seagreen">Board</span>
-                    </div>
-                    <div class="bg-primary-orange h-1 rounded-md w-[15%] mt-1"></div>
-                </h2>
-                <div class="flex flex-col gap-5">
-                    <div class="mt-4 md:mt-8" id="notice-board">
-                        <ol class="font-semibold text-xs md:text-sm [&>li]:py-1">
-                            <li class="dotted-blue-border">1.
-                                <a href="http://www.beu-bih.ac.in/BEUP/NoticePdf/08Mar202515140000.pdf">Academic
-                                    Schedule
-                                    for 5th Semester</a>
-                            </li>
-                            <li class="dotted-blue-border">2.
-                                <a href="http://www.beu-bih.ac.in/BEUP/NoticePdf/05Mar202513022128.pdf">List of
-                                    Qualified
-                                    Students for PH.D. Admission Written Test</a>
-                            </li>
-                            <li class="dotted-blue-border">3.
-                                <a href="http://www.beu-bih.ac.in/BEUP/NoticePdf/25Feb202516225576.pdf">
-                                    Notice
-                                </a>
-                            </li>
-                            <li class="dotted-blue-border">4.
-                                <a href="http://www.beu-bih.ac.in/BEUP/NoticePdf/15Feb202514581226.pdf">
-                                    Notice for Ph.D. Written Test
-                                </a>
-                            </li>
-
-                            <li class="dotted-blue-border">5.
-                                <a href="http://www.beu-bih.ac.in/BEUP/NoticePdf/05Feb202518220173.pdf">
-                                    4th Semester Examination 2024 Program
-                                </a>
-                            </li>
-
-                            <li class="dotted-blue-border">6.
-                                <a href="http://www.beu-bih.ac.in/BEUP/NoticePdf/05Feb202518224038.pdf">
-                                    7th Semester Examination 2024 Program
-                                </a>
-                            </li>
-
-                            <li class="dotted-blue-border">7.
-                                <a href="http://www.beu-bih.ac.in/BEUP/NoticePdf/25Jan202516015224.pdf">
-                                    List of Canidates for PH.D. Admission Written Test
-                                </a>
-                            </li>
-
-                        </ol>
-                    </div>
-                    <button
-                        class="border border-[#00548B] mt-4 py-1 md:py-2 font-secondary-color rounded-md hover:bg-[#00548B] hover:text-white text-xs md:text-base">View
-                        All</button>
-                </div>
-            </div>
-        </section>
 
         <section class="flex flex-col md:flex-row bg-blue-200 md:h-40 mb-10 p-4 md:p-0">
             <div class="flex-1">
@@ -478,11 +495,11 @@
 
         <section class="flex flex-col  md:flex-row md:w-[90%] gap-10 md:gap-0 m-auto mb-10">
             <div class="flex-1 p-5">
-                <h2 class="text-center text-xl md:text-3xl font-semibold">
-                    Student <span class="font-seagreen">Section</span>
-                    <div class="bg-primary-orange h-1 rounded-md w-[15%] mt-1"></div>
+                <h2 class="text-center text-xl md:text-3xl font-semibold font-secondary-color">
+                    Student Section
+                    <!-- <div class="bg-primary-blue h-1 rounded-md w-[15%] mt-1"></div> -->
                 </h2>
-                <!-- <div class="bg-secondary-blue h-0.5 w-[80%] mx-auto my-3 md:my-5"></div> -->
+                <div class="bg-secondary-blue h-0.5 w-[80%] mx-auto my-3 md:my-5"></div>
                 <div class="grid grid-cols-3 gap-1 md:gap-x-3 md:gap-y-4 w-[60%] m-auto [&_p]:text-xs mt-4 md:mt-8">
                     <div class="h-20 md:h-28 border-b-[1px] md:border-b-2 border-[#00548B] cursor-pointer">
                         <div class="h-[80%] w-full">
@@ -528,7 +545,7 @@
 
                     <div class="h-20 md:h-28 border-b-[1px] md:border-b-2 border-[#00548B] cursor-pointer">
                         <div class="h-[80%] w-full">
-                            <img src="./assets/double-quotes.png" alt="" class="w-full h-full object-contain">
+                            <img src="./assets/double-quote.png" alt="" class="w-full h-full object-contain">
                         </div>
                         <p class="font-secondary-color font-semibold text-center">Yojna</p>
                     </div>
@@ -552,11 +569,11 @@
                 </div>
             </div>
             <div class="flex-1 p-5">
-                <h2 class="text-center text-xl md:text-3xl font-semibold">
-                    Our <span class="font-seagreen">Mentors</span>
-                    <div class="bg-primary-orange h-1 rounded-md w-[15%] mt-1"></div>
+                <h2 class="text-center text-xl md:text-3xl font-semibold font-secondary-color">
+                    Our Mentors
+                    <!-- <div class="bg-primary-orange h-1 rounded-md w-[15%] mt-1"></div> -->
                 </h2>
-                <!-- <div class="bg-secondary-blue h-0.5 w-[80%] mx-auto my-3 md:my-5"></div> -->
+                <div class="bg-secondary-blue h-0.5 w-[80%] mx-auto my-3 md:my-5"></div>
                 <div class="w-[80%] md:w-[60%] m-auto [&_p]:text-xs [&_p]:md:text-sm mt-4 md:mt-8">
                     <div class="w-full flex pb-1 gap-2">
                         <div class="w-[30%] h-28">
@@ -591,73 +608,12 @@
             </div>
         </section>
 
-        <section class="mb-10">
-            <div class="bg-secondary-blue text-white py-3 flex min-w-max
-            ">
-                <div class="marquee flex gap-7 [&_img]:w-40">
-                    <img src="./assets/AICTE.png" alt="">
-                    <img src="./assets/AISHE.png" alt="">
-                    <img src="./assets/NPTEL.png" alt="">
-                    <img src="./assets/UGC.png" alt="">
-                </div>
-
-            </div>
-        </section>
-
         <section class="md:w-[90%] m-auto mb-10">
-            <h2 class="text-center text-xl md:text-3xl font-semibold p-5">
-                College <span class="font-seagreen">Events</span>
-                <div class="bg-primary-orange h-1 rounded-md w-[15%] mt-1"></div>
+            <h2 class="text-center text-xl md:text-3xl font-semibold p-5 font-secondary-color">
+                Program Details
+                <!-- <div class="bg-primary-orange h-1 rounded-md w-[15%] mt-1"></div> -->
             </h2>
-            <!-- <div class="bg-secondary-blue h-0.5 w-[80%] mx-auto my-3 md:my-5"></div> -->
-            <div class="w-[80%] mx-auto">
-                <ul class="[&>li]:text-xs [&>li]:md:text-sm [&_img]:w-5 [&_img]:md:w-8 [&_div]:p-1 [&_div]:md:p-2">
-                    <li class="flex gap-3 items-center text-sm py-2">
-                        <img src="./assets/double-quote.png" alt="" class="w-8 ">
-
-                        "Five-Day National Workshop on Research Methodology" on February 24, 2025, to March 1, 2025 at
-                        Ashoka Institute of Technology And Management
-                    </li>
-
-                    <li class="flex gap-3 items-center text-sm py-2">
-                        <img src="./assets/double-quote.png" alt="" class="w-8 ">
-
-                        Apeejay Festival of Ideas by ignited Minds: 21st and 22nd Feb 2025
-                        <div class="gradient md:p-2 rounded-md font-semibold text-white text-xs">NEW</div>
-                    </li>
-
-                    <li class="flex gap-3 items-center text-sm py-2">
-                        <img src="./assets/double-quote.png" alt="" class="w-8 ">
-
-                        CIPET: IPT-Lucknow is organizing the 16th International Conference on Advancements in Polymeric
-                        Materials (APM-2025) on the theme "Advancements in the Petrochemical Sector & Empowering
-                        Sustainable Development Leading to 'Viksit Bharat'", : 8th to 10th March, 2025
-                    </li>
-
-                    <li class="flex gap-3 items-center text-sm py-2">
-                        <img src="./assets/double-quote.png" alt="" class="w-8 ">
-
-                        "Transformative Trends in Drug Discovery and Delivery: Exploring Next-Generation Therapeutics
-                        and Technologies": 21st and 22nd March 2025
-                        <div class="gradient md:p-2 rounded-md font-semibold text-white text-xs">NEW</div>
-                    </li>
-
-                    <li class="flex gap-3 items-center text-sm py-2">
-                        <img src="./assets/double-quote.png" alt="" class="w-8 ">
-
-                        Apeejay Festival of Ideas by ignited Minds: 21st and 22nd Feb 2025
-                        <div class="gradient md:p-2 rounded-md font-semibold text-white text-xs">NEW</div>
-                    </li>
-                </ul>
-            </div>
-
-        </section>
-
-        <section class="md:w-[90%] m-auto mb-10">
-            <h2 class="text-center text-xl md:text-3xl font-semibold p-5">
-                Programs <span class="font-seagreen">Details</span>
-                <div class="bg-primary-orange h-1 rounded-md w-[15%] mt-1"></div>
-            </h2>
+            <div class="bg-secondary-blue h-0.5 w-[80%] mx-auto my-3 md:my-5"></div>
 
             <div class="max-w-xs md:w-full grid gap-6 md:grid-cols-2 lg:grid-cols-3 items-start lg:max-w-none mx-auto">
 
@@ -812,6 +768,73 @@
                 </div>
 
             </div>
+        </section>
+
+        <section class="md:w-[90%] m-auto mb-10">
+            <h2 class="text-center text-xl md:text-3xl font-semibold font-secondary-color">
+                Affiliated With
+                <!-- <div class="bg-primary-blue h-1 rounded-md w-[15%] mt-1"></div> -->
+            </h2>
+            <div class="bg-secondary-blue h-0.5 w-[80%] mx-auto my-3 md:my-5"></div>
+            <div class="py-3 w-[80%] mx-auto
+            ">
+                <div class="flex justify-start md:justify-center flex-wrap gap-4 md:gap-7 [&_img]:w-40">
+                    <img src="./assets/AICTE.png" alt="">
+                    <img src="./assets/AISHE.png" alt="">
+                    <img src="./assets/NPTEL.png" alt="">
+                    <img src="./assets/UGC.png" alt="">
+                </div>
+
+            </div>
+        </section>
+
+        <section class="md:w-[90%] m-auto mb-10">
+            <h2 class="text-center text-xl md:text-3xl font-semibold p-5 font-secondary-color">
+                College Events
+                <!-- <div class="bg-primary-orange h-1 rounded-md w-[15%] mt-1"></div> -->
+            </h2>
+            <div class="bg-secondary-blue h-0.5 w-[80%] mx-auto my-3 md:my-5"></div>
+            <div class="w-[80%] mx-auto">
+                <ul class="[&>li]:text-xs [&>li]:md:text-sm [&_img]:w-5 [&_img]:md:w-8 [&_div]:p-1 [&_div]:md:p-2">
+                    <li class="flex gap-3 items-center text-sm py-2">
+                        <img src="./assets/double-quote.png" alt="" class="w-8 ">
+
+                        "Five-Day National Workshop on Research Methodology" on February 24, 2025, to March 1, 2025 at
+                        Ashoka Institute of Technology And Management
+                    </li>
+
+                    <li class="flex gap-3 items-center text-sm py-2">
+                        <img src="./assets/double-quote.png" alt="" class="w-8 ">
+
+                        Apeejay Festival of Ideas by ignited Minds: 21st and 22nd Feb 2025
+                        <div class="gradient md:p-2 rounded-md font-semibold text-white text-xs">NEW</div>
+                    </li>
+
+                    <li class="flex gap-3 items-center text-sm py-2">
+                        <img src="./assets/double-quote.png" alt="" class="w-8 ">
+
+                        CIPET: IPT-Lucknow is organizing the 16th International Conference on Advancements in Polymeric
+                        Materials (APM-2025) on the theme "Advancements in the Petrochemical Sector & Empowering
+                        Sustainable Development Leading to 'Viksit Bharat'", : 8th to 10th March, 2025
+                    </li>
+
+                    <li class="flex gap-3 items-center text-sm py-2">
+                        <img src="./assets/double-quote.png" alt="" class="w-8 ">
+
+                        "Transformative Trends in Drug Discovery and Delivery: Exploring Next-Generation Therapeutics
+                        and Technologies": 21st and 22nd March 2025
+                        <div class="gradient md:p-2 rounded-md font-semibold text-white text-xs">NEW</div>
+                    </li>
+
+                    <li class="flex gap-3 items-center text-sm py-2">
+                        <img src="./assets/double-quote.png" alt="" class="w-8 ">
+
+                        Apeejay Festival of Ideas by ignited Minds: 21st and 22nd Feb 2025
+                        <div class="gradient md:p-2 rounded-md font-semibold text-white text-xs">NEW</div>
+                    </li>
+                </ul>
+            </div>
+
         </section>
 
         <footer class="bg-secondary-blue text-white">
