@@ -54,18 +54,48 @@
                 </ul> -->
             </div>
 
-            <div class="w-full min-h-32 md:min-h-36 flex flex-wrap justify-center items-center py-2">
-                <div class="w-fit h-full flex">
+            <div class="w-full min-h-32 md:min-h-36 flex md:justify-evenly flex-col md:flex-row gap-5 md:gap-0 flex-wrap md:items-center p-2">
+                <div class="w-full md:w-fit h-full flex justify-center md:justify-start">
                     <img src="./assets/governmentOfBihar.webp" alt="governmentOfBihar logo"
                         class="w-28 md:w-32 aspect-square object-cover">
                     <img src="./assets/BEU_LOGO_-_FINIAL_APPROVED.png" alt="BEU Logo"
                         class="w-32 md:w-36 object-cover mr-3">
                 </div>
 
-                <div class="font-secondary-color">
+                <div class="font-secondary-color text-center md:text-start">
                     <h2 class="text-xl md:text-4xl font-bold">Bihar Engineering University, Patna</h2>
                     <h4 class="text-lg md:text-3xl font-semibold">Government of Bihar</h4>
                 </div>
+
+                <div class="flex flex-col items-center space-y-2">
+                    <!-- Social Icons Row -->
+                    <div class="flex space-x-4">
+                        <a href="#"
+                            class="w-8 h-8 flex items-center justify-center rounded-full bg-blue-600 text-white text-xl transform transition-transform duration-300 hover:scale-110">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#"
+                            class="w-8 h-8 flex items-center justify-center rounded-full bg-sky-500 text-white text-xl transform transition-transform duration-300 hover:scale-110">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#"
+                            class="w-8 h-8 flex items-center justify-center rounded-full bg-blue-700 text-white text-xl transform transition-transform duration-300 hover:scale-110">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="#"
+                            class="w-8 h-8 flex items-center justify-center rounded-full bg-red-600 text-white text-xl transform transition-transform duration-300 hover:scale-110">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+
+                    <!-- Search Bar Row -->
+                    <div class="w-full max-w-md">
+                        <input type="text" placeholder="Search..."
+                            class="w-full px-4 py-2 border border-gray-300 rounded-full focus:outline-none focus:ring-2 focus:ring-[#0676BD]">
+                    </div>
+                </div>
+
+
             </div>
 
             <section class="bg-primary-blue text-white relative">
@@ -446,269 +476,277 @@
             </div>
         </section>
 
-        <section class="flex flex-col  md:flex-row md:w-[90%] gap-10 md:gap-0 m-auto mb-10">
-            <div class="flex-1 md:p-5">
-                <h2 class="text-center text-xl md:text-3xl font-semibold font-secondary-color">
-                    Student Section
-                </h2>
-                <div class="bg-secondary-blue h-0.5 w-[80%] mx-auto my-3 md:my-5"></div>
-                <div class="grid grid-cols-3 gap-4 w-[80%] lg:w-[60%] m-auto [&_p]:text-xs mt-4 md:mt-8">
-                    <div class="h-24 md:h-32 border-b-[1px] md:border-b-2 border-[#00548B] cursor-pointer">
-                        <div class="h-[80%] w-full">
-                            <img src="./assets/computer.png" alt="" class="w-full h-full object-contain">
+        <section class="bg-[#FFFFFF]">
+            <section class="flex flex-col  md:flex-row md:w-[90%] gap-10 md:gap-0 m-auto mb-10">
+                <div class="flex-1 md:p-5">
+                    <h2 class="text-center text-xl md:text-3xl font-semibold font-secondary-color">
+                        Student Section
+                    </h2>
+                    <div class="bg-secondary-blue h-0.5 w-[80%] mx-auto my-3 md:my-5"></div>
+                    <div class="grid grid-cols-3 gap-4 w-[80%] lg:w-[60%] m-auto [&_p]:text-xs mt-4 md:mt-8">
+                        <div class="h-24 md:h-32 border-b-[1px] md:border-b-2 border-[#00548B] cursor-pointer">
+                            <div class="h-[80%] w-full">
+                                <img src="./assets/computer.png" alt="" class="w-full h-full object-contain">
+                            </div>
+                            <p class="font-secondary-color font-semibold text-center">One View</p>
                         </div>
-                        <p class="font-secondary-color font-semibold text-center">One View</p>
-                    </div>
 
-                    <div class="h-24 md:h-32 border-b-[1px] md:border-b-2 border-[#00548B] cursor-pointer">
-                        <div class="h-[80%] w-full">
-                            <img src="./assets/complain.png" alt="" class="w-full h-full object-contain">
+                        <div class="h-24 md:h-32 border-b-[1px] md:border-b-2 border-[#00548B] cursor-pointer">
+                            <div class="h-[80%] w-full">
+                                <img src="./assets/complain.png" alt="" class="w-full h-full object-contain">
+                            </div>
+                            <p class="font-secondary-color font-semibold text-center">Grievance</p>
                         </div>
-                        <p class="font-secondary-color font-semibold text-center">Grievance</p>
-                    </div>
 
-                    <div class="h-24 md:h-32 border-b-[1px] md:border-b-2 border-[#00548B] cursor-pointer">
-                        <div class="h-[80%] w-full">
-                            <img src="./assets/customer.png" alt="" class="w-full h-full object-contain">
+                        <div class="h-24 md:h-32 border-b-[1px] md:border-b-2 border-[#00548B] cursor-pointer">
+                            <div class="h-[80%] w-full">
+                                <img src="./assets/customer.png" alt="" class="w-full h-full object-contain">
+                            </div>
+                            <p class="font-secondary-color font-semibold text-center">KYC</p>
                         </div>
-                        <p class="font-secondary-color font-semibold text-center">KYC</p>
-                    </div>
 
-                    <div class="h-24 md:h-32 border-b-[1px] md:border-b-2 border-[#00548B] cursor-pointer">
-                        <div class="h-[80%] w-full">
-                            <img src="./assets/documents.png" alt="" class="w-full h-full object-contain">
+                        <div class="h-24 md:h-32 border-b-[1px] md:border-b-2 border-[#00548B] cursor-pointer">
+                            <div class="h-[80%] w-full">
+                                <img src="./assets/documents.png" alt="" class="w-full h-full object-contain">
+                            </div>
+                            <p class="font-secondary-color font-semibold text-center">Exam Form</p>
                         </div>
-                        <p class="font-secondary-color font-semibold text-center">Exam Form</p>
-                    </div>
 
-                    <div class="h-24 md:h-32 border-b-[1px] md:border-b-2 border-[#00548B] cursor-pointer">
-                        <div class="h-[80%] w-full">
-                            <img src="./assets/relationship.png" alt="" class="w-full h-full object-contain">
+                        <div class="h-24 md:h-32 border-b-[1px] md:border-b-2 border-[#00548B] cursor-pointer">
+                            <div class="h-[80%] w-full">
+                                <img src="./assets/relationship.png" alt="" class="w-full h-full object-contain">
+                            </div>
+                            <p class="font-secondary-color font-semibold text-center">Community</p>
                         </div>
-                        <p class="font-secondary-color font-semibold text-center">Community</p>
-                    </div>
 
-                    <div class="h-24 md:h-32 border-b-[1px] md:border-b-2 border-[#00548B] cursor-pointer">
-                        <div class="h-[80%] w-full">
-                            <img src="./assets/track-mail.png" alt="" class="w-full h-full object-contain">
+                        <div class="h-24 md:h-32 border-b-[1px] md:border-b-2 border-[#00548B] cursor-pointer">
+                            <div class="h-[80%] w-full">
+                                <img src="./assets/track-mail.png" alt="" class="w-full h-full object-contain">
+                            </div>
+                            <p class="font-secondary-color font-semibold text-center">Track Post</p>
                         </div>
-                        <p class="font-secondary-color font-semibold text-center">Track Post</p>
-                    </div>
 
-                    <div class="h-24 md:h-32 border-b-[1px] md:border-b-2 border-[#00548B] cursor-pointer">
-                        <div class="h-[80%] w-full">
-                            <img src="./assets/double-quote.png" alt="" class="w-full h-full object-contain">
+                        <div class="h-24 md:h-32 border-b-[1px] md:border-b-2 border-[#00548B] cursor-pointer">
+                            <div class="h-[80%] w-full">
+                                <img src="./assets/double-quote.png" alt="" class="w-full h-full object-contain">
+                            </div>
+                            <p class="font-secondary-color font-semibold text-center">Yojna</p>
                         </div>
-                        <p class="font-secondary-color font-semibold text-center">Yojna</p>
-                    </div>
 
-                    <div class="h-24 md:h-32 border-b-[1px] md:border-b-2 border-[#00548B] cursor-pointer">
-                        <div class="h-[80%] w-full">
-                            <img src="./assets/customer.png" alt="" class="w-full h-full object-contain">
+                        <div class="h-24 md:h-32 border-b-[1px] md:border-b-2 border-[#00548B] cursor-pointer">
+                            <div class="h-[80%] w-full">
+                                <img src="./assets/customer.png" alt="" class="w-full h-full object-contain">
+                            </div>
+                            <p class="font-secondary-color font-semibold text-center">Services</p>
                         </div>
-                        <p class="font-secondary-color font-semibold text-center">Services</p>
-                    </div>
 
-                    <div class="h-24 md:h-32 border-b-[1px] md:border-b-2 border-[#00548B] cursor-pointer">
-                        <div class="h-[80%] w-full">
-                            <img src="./assets/computer.png" alt="" class="w-full h-full object-contain">
+                        <div class="h-24 md:h-32 border-b-[1px] md:border-b-2 border-[#00548B] cursor-pointer">
+                            <div class="h-[80%] w-full">
+                                <img src="./assets/computer.png" alt="" class="w-full h-full object-contain">
+                            </div>
+                            <p class="font-secondary-color font-semibold text-center">Announcement</p>
                         </div>
-                        <p class="font-secondary-color font-semibold text-center">Announcement</p>
-                    </div>
 
 
 
-                </div>
-            </div>
-            <div class="flex-1 md:p-5">
-                <h2 class="text-center text-xl md:text-3xl font-semibold font-secondary-color">
-                    Our Mentors
-                </h2>
-                <div class="bg-secondary-blue h-0.5 w-[80%] mx-auto my-3 md:my-5"></div>
-                <div class="w-[80%] lg:w-[60%] m-auto [&_p]:text-xs">
-                    <div class="w-full flex pb-1 gap-2">
-                        <div class="h-36">
-                            <img src="./assets/CM.png" alt="" class="w-full h-full">
-                        </div>
-                        <div class="w-[70%] place-content-end font-secondary-color border-b-2 border-blue-900">
-                            <p>Shri Nitish Kumar</p>
-                            <p>Hon'ble Chancellor</p>
-                            <p>Chief Minister Bihar</p>
-                        </div>
-                    </div>
-
-                    <div class="w-full flex pb-1 gap-2">
-                        <div class="h-36">
-                            <img src="./assets/MinisterDSTTE.png" alt="" class="w-full h-full">
-                        </div>
-                        <div class="w-[70%] place-content-end font-secondary-color border-b-2 border-blue-900 text-sm">
-                            <p>Shri Sumit Kumar Singh</p>
-                            <p>Hon'ble Minister DSTTE </p>
-                            <p>Government Of Bihar</p>
-                        </div>
-                    </div>
-
-                    <div class="w-full flex pb-1 gap-2">
-                        <div class="h-36 ">
-                            <img src="./assets/MinisterDSTTE.png" alt="" class="w-full h-full">
-                        </div>
-                        <div class="w-[70%] place-content-end font-secondary-color border-b-2 border-blue-900">
-                            <p>Prof. Suresh Kant Verma</p>
-                            <p>Vice Chancellor</p>
-                            <p>Bihar Engineering University</p>
-                        </div>
                     </div>
                 </div>
-            </div>
-        </section>
+                <div class="flex-1 md:p-5">
+                    <h2 class="text-center text-xl md:text-3xl font-semibold font-secondary-color">
+                        Our Mentors
+                    </h2>
+                    <div class="bg-secondary-blue h-0.5 w-[80%] mx-auto my-3 md:my-5"></div>
+                    <div class="w-[80%] lg:w-[60%] m-auto [&_p]:text-xs">
+                        <div class="w-full flex pb-1 gap-2">
+                            <div class="h-36">
+                                <img src="./assets/CM.png" alt="" class="w-full h-full">
+                            </div>
+                            <div class="w-[70%] place-content-end font-secondary-color border-b-2 border-blue-900">
+                                <p>Shri Nitish Kumar</p>
+                                <p>Hon'ble Chancellor</p>
+                                <p>Chief Minister Bihar</p>
+                            </div>
+                        </div>
 
-        <section class="md:w-[90%] m-auto mb-10">
-            <h2 class="text-center text-xl md:text-3xl font-semibold md:p-5 font-secondary-color">
-                Program Details
-            </h2>
-            <div class="bg-secondary-blue h-0.5 w-[80%] mx-auto my-3 md:my-5"></div>
-
-            <div
-                class="max-w-xs  md:max-w-none md:w-full grid gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 items-start mx-auto">
-
-                <!-- Card -->
-                <div
-                    class="flex flex-col h-full bg-white border border-slate-200 shadow shadow-slate-950/5 rounded-2xl overflow-hidden bg-primary-blue">
-                    <!-- Image -->
-                    <img class="object-cover h-40 md:h-48 w-full"
-                        src="./assets/bakhtiyarpur-college-of-engineering-bakhtiarpur-patna-colleges-Z1Xp52eGd3.webp"
-                        width="304" height="192" alt="Course 01">
-                    <!-- Card Content -->
-                    <div class="flex-1 flex flex-col p-4 md:p-6 font-secondary-color">
-                        <!-- Card body -->
-                        <div class="flex-1">
-                            <!-- Header -->
+                        <div class="w-full flex pb-1 gap-2">
+                            <div class="h-36">
+                                <img src="./assets/MinisterDSTTE.png" alt="" class="w-full h-full">
+                            </div>
                             <div
-                                class="card-body border-slate-400 border-b-2 flex flex-col gap-3 p-2 md:p-4 pb-4 md:pb-8">
-                                <h2 class="font-bold text-xl md:text-3xl line-clamp-2 overflow-hidden hover:underline"
-                                    x-data="{ text: 'Government of Bihar' }" x-text="text">
-                                </h2>
-                                <div class="flex gap-2 text-sm md:text-base">
-                                    <p>Under Graduate</p>
-                                    <p>-</p>
-                                    <p>Bihar, Patna</p>
-                                </div>
-                            </div>
-                            <!-- Content -->
-                            <div class="flex flex-col gap-2 p-2 md:p-4 bg-slate-50 text-sm md:text-base">
-                                <div class="flex gap-3">
-                                    <p><i class="fa-solid fa-graduation-cap w-4"></i></p>
-                                    <p>Students seeking a Bachelors degree can choose from our Programmes like B.
-                                        Pharma, B. Tech, BHMCT, B.Arch, BFAD etc.</p>
-                                </div>
-                                <div class="flex gap-3">
-                                    <p><i class="fa-regular fa-calendar w-4"></i></p>
-                                    <p>27 Nov 2024 - 5 Mar 2025</p>
-                                </div>
+                                class="w-[70%] place-content-end font-secondary-color border-b-2 border-blue-900 text-sm">
+                                <p>Shri Sumit Kumar Singh</p>
+                                <p>Hon'ble Minister DSTTE </p>
+                                <p>Government Of Bihar</p>
                             </div>
                         </div>
-                        <!-- Card footer -->
-                        <div class="flex justify-end space-x-2 text-sm md:text-base">
-                            <button
-                                class="border border-[#00548B] font-secondary-color rounded-md py-2 md:py-3 w-full hover:bg-[#00548B] hover:text-white">Explore
-                                Course</button>
-                        </div>
-                    </div>
-                </div>
 
-                <!-- Repeat for other cards -->
-                <div
-                    class="flex flex-col h-full bg-white border border-slate-200 shadow shadow-slate-950/5 rounded-2xl overflow-hidden">
-                    <img class="object-cover h-40 md:h-48 w-full"
-                        src="./assets/bakhtiyarpur-college-of-engineering-bakhtiarpur-patna-colleges-Z1Xp52eGd3.webp"
-                        width="304" height="192" alt="Course 01">
-                    <div class="flex-1 flex flex-col p-4 md:p-6 font-secondary-color">
-                        <div class="flex-1">
-                            <div
-                                class="card-body border-slate-400 border-b-2 flex flex-col gap-3 p-2 md:p-4 pb-4 md:pb-8">
-                                <h2 class="font-bold text-xl md:text-3xl line-clamp-2 overflow-hidden hover:underline"
-                                    x-data="{ text: 'Government of Bihar' }" x-text="text"></h2>
-                                <div class="flex gap-2">
-                                    <p>Post Graduate</p>
-                                    <p>-</p>
-                                    <p>Bihar, Patna</p>
-                                </div>
+                        <div class="w-full flex pb-1 gap-2">
+                            <div class="h-36 ">
+                                <img src="./assets/MinisterDSTTE.png" alt="" class="w-full h-full">
                             </div>
-                            <div class="flex flex-col gap-2 p-2 md:p-4 bg-slate-50 text-sm md:text-base">
-                                <div class="flex gap-3">
-                                    <p><i class="fa-solid fa-graduation-cap w-4"></i></p>
-                                    <p>Students seeking a Masters degree can choose from our Programmes like MBA, MCA,
-                                        M.Tech, M.Pharm and M.Arch.</p>
-                                </div>
-                                <div class="flex gap-3">
-                                    <p><i class="fa-regular fa-calendar w-4"></i></p>
-                                    <p>27 Nov 2024 - 5 Mar 2025</p>
-                                </div>
+                            <div class="w-[70%] place-content-end font-secondary-color border-b-2 border-blue-900">
+                                <p>Prof. Suresh Kant Verma</p>
+                                <p>Vice Chancellor</p>
+                                <p>Bihar Engineering University</p>
                             </div>
-                        </div>
-                        <div class="flex justify-end space-x-2 text-sm md:text-base">
-                            <button
-                                class="border border-[#00548B] font-secondary-color rounded-md py-3 w-full hover:bg-[#00548B] hover:text-white">Explore
-                                Course</button>
                         </div>
                     </div>
                 </div>
-
-                <div
-                    class="flex flex-col h-full bg-white border border-slate-200 shadow shadow-slate-950/5 rounded-2xl overflow-hidden">
-                    <img class="object-cover h-40 md:h-48 w-full"
-                        src="./assets/bakhtiyarpur-college-of-engineering-bakhtiarpur-patna-colleges-Z1Xp52eGd3.webp"
-                        width="304" height="192" alt="Course 01">
-                    <div class="flex-1 flex flex-col p-4 md:p-6 font-secondary-color">
-                        <div class="flex-1">
-                            <div
-                                class="card-body border-slate-400 border-b-2 flex flex-col gap-3 p-2 md:p-4 pb-4 md:pb-8">
-                                <h2 class="font-bold text-xl md:text-3xl line-clamp-2 overflow-hidden hover:underline"
-                                    x-data="{ text: 'Government of Bihar' }" x-text="text"></h2>
-                                <div class="flex gap-2">
-                                    <p>Research</p>
-                                    <p>-</p>
-                                    <p>Bihar, Patna</p>
-                                </div>
-                            </div>
-                            <div class="flex flex-col gap-2 p-2 md:p-4 bg-slate-50 text-sm md:text-base">
-                                <div class="flex gap-3">
-                                    <p><i class="fa-solid fa-graduation-cap w-4"></i></p>
-                                    <p>Students seeking a Doctoral degree (Ph.D.) can seek admission in the field in
-                                        which he/she has passed his/her qualifying examination</p>
-                                </div>
-                                <div class="flex gap-3">
-                                    <p><i class="fa-regular fa-calendar w-4"></i></p>
-                                    <p>27 Nov 2024 - 5 Mar 2025</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="flex justify-end space-x-2 text-sm md:text-base">
-                            <button
-                                class="border border-[#00548B] font-secondary-color rounded-md py-3 w-full hover:bg-[#00548B] hover:text-white">Explore
-                                Course</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            </section>
 
         </section>
 
-        <section class="md:w-[90%] m-auto mb-10">
-            <h2 class="text-center text-xl md:text-3xl font-semibold font-secondary-color">
-                Affiliated With
-            </h2>
-            <div class="bg-secondary-blue h-0.5 w-[80%] mx-auto my-3 md:my-5"></div>
-            <div class="py-3 w-[80%] mx-auto
-            ">
-                <div class="flex justify-between lg:justify-center flex-wrap gap-4 md:gap-7 [&_img]:w-40 mx-auto">
-                    <img src="./assets/AICTE.png" alt="">
-                    <img src="./assets/AISHE.png" alt="">
-                    <img src="./assets/NPTEL.png" alt="">
-                    <img src="./assets/UGC.png" alt="">
+        <section class="bg-[#EAF3FB]">
+            <section class="md:w-[90%] m-auto mb-10">
+                <h2 class="text-center text-xl md:text-3xl font-semibold md:p-5 font-secondary-color">
+                    Program Details
+                </h2>
+                <div class="bg-secondary-blue h-0.5 w-[80%] mx-auto my-3 md:my-5"></div>
+
+                <div
+                    class="max-w-xs  md:max-w-none md:w-full grid gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 items-start mx-auto">
+
+                    <!-- Card -->
+                    <div class="flex flex-col h-full bg-white border border-slate-200  rounded-2xl overflow-hidden">
+                        <!-- Image -->
+                        <img class="object-cover h-40 md:h-48 w-full"
+                            src="./assets/bakhtiyarpur-college-of-engineering-bakhtiarpur-patna-colleges-Z1Xp52eGd3.webp"
+                            width="304" height="192" alt="Course 01">
+                        <!-- Card Content -->
+                        <div class="flex-1 flex flex-col p-4 md:p-6 font-secondary-color">
+                            <!-- Card body -->
+                            <div class="flex-1">
+                                <!-- Header -->
+                                <div
+                                    class="card-body border-slate-400 border-b-2 flex flex-col gap-3 p-2 md:p-4 pb-4 md:pb-8">
+                                    <h2 class="font-bold text-xl md:text-3xl line-clamp-2 overflow-hidden hover:underline"
+                                        x-data="{ text: 'Government of Bihar' }" x-text="text">
+                                    </h2>
+                                    <div class="flex gap-2 text-sm md:text-base">
+                                        <p>Under Graduate</p>
+                                        <p>-</p>
+                                        <p>Bihar, Patna</p>
+                                    </div>
+                                </div>
+                                <!-- Content -->
+                                <div class="flex flex-col gap-2 p-2 md:p-4 bg-slate-50 text-sm md:text-base">
+                                    <div class="flex gap-3">
+                                        <p><i class="fa-solid fa-graduation-cap w-4"></i></p>
+                                        <p>Students seeking a Bachelors degree can choose from our Programmes like B.
+                                            Pharma, B. Tech, BHMCT, B.Arch, BFAD etc.</p>
+                                    </div>
+                                    <div class="flex gap-3">
+                                        <p><i class="fa-regular fa-calendar w-4"></i></p>
+                                        <p>27 Nov 2024 - 5 Mar 2025</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Card footer -->
+                            <div class="flex justify-end space-x-2 text-sm md:text-base">
+                                <button
+                                    class="border border-[#00548B] font-secondary-color rounded-md py-3 w-full hover:bg-[#00548B] hover:text-white">Explore
+                                    Course</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Repeat for other cards -->
+                    <div
+                        class="flex flex-col h-ful border border-slate-200  rounded-2xl overflow-hidden bg-white font-secondary-color">
+                        <img class="object-cover h-40 md:h-48 w-full"
+                            src="./assets/bakhtiyarpur-college-of-engineering-bakhtiarpur-patna-colleges-Z1Xp52eGd3.webp"
+                            width="304" height="192" alt="Course 01">
+                        <div class="flex-1 flex flex-col p-4 md:p-6">
+                            <div class="flex-1">
+                                <div
+                                    class="card-body border-slate-400 border-b-2 flex flex-col gap-3 p-2 md:p-4 pb-4 md:pb-8">
+                                    <h2 class="font-bold text-xl md:text-3xl line-clamp-2 overflow-hidden hover:underline"
+                                        x-data="{ text: 'Government of Bihar' }" x-text="text"></h2>
+                                    <div class="flex gap-2 text-sm md:text-base">
+                                        <p>Post Graduate</p>
+                                        <p>-</p>
+                                        <p>Bihar, Patna</p>
+                                    </div>
+                                </div>
+                                <div class="flex flex-col gap-2 p-2 md:p-4  text-sm md:text-base bg-slate-50">
+                                    <div class="flex gap-3">
+                                        <p><i class="fa-solid fa-graduation-cap w-4"></i></p>
+                                        <p>Students seeking a Masters degree can choose from our Programmes like MBA,
+                                            MCA,
+                                            M.Tech, M.Pharm and M.Arch.</p>
+                                    </div>
+                                    <div class="flex gap-3">
+                                        <p><i class="fa-regular fa-calendar w-4"></i></p>
+                                        <p>27 Nov 2024 - 5 Mar 2025</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flex justify-end space-x-2 text-sm md:text-base">
+                                <button
+                                    class="border border-[#00548B] font-secondary-color rounded-md py-3 w-full hover:bg-[#00548B] hover:text-white">Explore
+                                    Course</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div
+                        class="flex flex-col h-full bg-white border border-slate-200  rounded-2xl overflow-hidden font-secondary-color">
+                        <img class="object-cover h-40 md:h-48 w-full"
+                            src="./assets/bakhtiyarpur-college-of-engineering-bakhtiarpur-patna-colleges-Z1Xp52eGd3.webp"
+                            width="304" height="192" alt="Course 01">
+                        <div class="flex-1 flex flex-col p-4 md:p-6 ">
+                            <div class="flex-1">
+                                <div
+                                    class="card-body border-slate-400 border-b-2 flex flex-col gap-3 p-2 md:p-4 pb-4 md:pb-8">
+                                    <h2 class="font-bold text-xl md:text-3xl line-clamp-2 overflow-hidden hover:underline"
+                                        x-data="{ text: 'Government of Bihar' }" x-text="text"></h2>
+                                    <div class="flex gap-2 text-sm md:text-base">
+                                        <p>Research</p>
+                                        <p>-</p>
+                                        <p>Bihar, Patna</p>
+                                    </div>
+                                </div>
+                                <div class="flex flex-col gap-2 p-2 md:p-4 text-sm md:text-base bg-slate-50">
+                                    <div class="flex gap-3">
+                                        <p><i class="fa-solid fa-graduation-cap w-4"></i></p>
+                                        <p>Students seeking a Doctoral degree (Ph.D.) can seek admission in the field in
+                                            which he/she has passed his/her qualifying examination</p>
+                                    </div>
+                                    <div class="flex gap-3">
+                                        <p><i class="fa-regular fa-calendar w-4"></i></p>
+                                        <p>27 Nov 2024 - 5 Mar 2025</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flex justify-end space-x-2 text-sm md:text-base">
+                                <button
+                                    class="border border-[#00548B] font-secondary-color rounded-md py-3 w-full hover:bg-[#00548B] hover:text-white">Explore
+                                    Course</button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
-            </div>
+            </section>
+        </section>
+
+        <section class="bg-[#F1F1F1]">
+            <section class="md:w-[90%] m-auto mb-10 py-3">
+                <h2 class="text-center text-xl md:text-3xl font-semibold font-secondary-color">
+                    Affiliated With
+                </h2>
+                <div class="bg-secondary-blue h-0.5 w-[80%] mx-auto my-3 md:my-5"></div>
+                <div class="py-3 w-[80%] mx-auto
+                ">
+                    <div class="flex justify-between lg:justify-center flex-wrap gap-4 md:gap-7 [&_img]:w-40 mx-auto">
+                        <img src="./assets/AICTE.png" alt="">
+                        <img src="./assets/AISHE.png" alt="">
+                        <img src="./assets/NPTEL.png" alt="">
+                        <img src="./assets/UGC.png" alt="">
+                    </div>
+
+                </div>
+            </section>
         </section>
 
         <section class="md:w-[90%] m-auto mb-10 bg-[#FAF2BA]">
