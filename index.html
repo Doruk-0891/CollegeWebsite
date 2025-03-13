@@ -68,175 +68,109 @@
                 </div>
             </div>
 
-            <nav class="bg-secondary-blue dark:bg-gray-900 dark:border-gray-700">
-                <div class="w-full flex justify-between mx-auto md:m-0 px-4 ">
-                    <div class="block md:hidden"></div>
+            <section class="bg-primary-blue text-white relative">
+                <nav class="md:container mx-auto flex justify-between items-center ">
 
-                    <div class="hidden w-full md:flex md:justify-between md:items-center flex-wrap "
-                        id="navbar-dropdown">
-                        <ul
-                            class="flex flex-col flex-wrap font-medium rtl:space-x-reverse md:flex-row bg-secondary-blue dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
-                            <li class="blue-tab inline-block py-2">
-                                <a href="#" class="block px-3 text-white" aria-current="page">Home</a>
-                            </li>
-
-                            <li class="py-2 inline-block blue-tab">
-
-                                <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar"
-                                    data-dropdown-trigger="hover" class="flex items-center px-3 text-white">About Us
-                                    <svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true"
-                                        xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
-                                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                                            stroke-width="2" d="m1 1 4 4 4-4" />
-                                    </svg></button>
-
-                                <!-- Dropdown menu -->
-                                <div id="dropdownNavbar"
-                                    class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow-sm dark:bg-gray-700 dark:divide-gray-600 px-3">
-                                    <ul class="py-2 px-4" aria-labelledby="dropdownLargeButton">
-                                        <li>
-                                            <a href="#"
-                                                class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Vision</a>
-                                        </li>
-                                        <li>
-                                            <a href="#"
-                                                class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Mission</a>
-                                        </li>
-                                        <li>
-                                            <a href="#"
-                                                class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Objective</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </li>
-
-                            <li class="py-2 blue-tab">
-                                <button id="organizationNavbarLink" data-dropdown-toggle="organizationNavbarMenu"
-                                    data-dropdown-trigger="hover"
-                                    class="flex items-center justify-between px-3 text-white">Organization
-                                    Structure
-                                    <svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true"
-                                        xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
-                                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                                            stroke-width="2" d="m1 1 4 4 4-4" />
-                                    </svg></button>
-                                <!-- Dropdown menu -->
-                                <div id="organizationNavbarMenu"
-                                    class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow-sm dark:bg-gray-700 dark:divide-gray-600 px-3">
-                                    <ul class="py-2 px-4" aria-labelledby="dropdownLargeButton">
-                                        <li>
-                                            <a href="#"
-                                                class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Chancellor</a>
-                                        </li>
-                                        <li>
-                                            <a href="#"
-                                                class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Vice
-                                                Chancellor</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </li>
-
-                            <li class="py-2 blue-tab">
-                                <button id="affiliatedCollegesLink" data-dropdown-toggle="affiliatedCollegesMenu"
-                                    data-dropdown-trigger="hover"
-                                    class="flex items-center justify-between px-3 text-white">Affiliation
-                                    <svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true"
-                                        xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
-                                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                                            stroke-width="2" d="m1 1 4 4 4-4" />
-                                    </svg></button>
-                                <!-- Dropdown menu -->
-                                <div id="affiliatedCollegesMenu"
-                                    class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow-sm dark:bg-gray-700 dark:divide-gray-600 px-3">
-                                    <ul class="py-2 px-4" aria-labelledby="dropdownLargeButton">
-                                        <li>
-                                            <a href="#"
-                                                class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Affiliated
-                                                Colleges</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </li>
-
-                            <li class="py-2 blue-tab">
-                                <button id="academicsLink" data-dropdown-toggle="academicsMenu"
-                                    data-dropdown-trigger="hover"
-                                    class="flex items-center justify-between px-3 text-white">Academics
-                                    <svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true"
-                                        xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
-                                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                                            stroke-width="2" d="m1 1 4 4 4-4" />
-                                    </svg></button>
-                                <!-- Dropdown menu -->
-                                <div id="academicsMenu"
-                                    class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow-sm dark:bg-gray-700 dark:divide-gray-600 px-3">
-                                    <ul class="py-2 px-4" aria-labelledby="dropdownLargeButton">
-                                        <li>
-                                            <a href="#"
-                                                class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Programs</a>
-                                        </li>
-                                        <li>
-                                            <a href="#"
-                                                class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Board
-                                                of Studies</a>
-                                        </li>
-                                        <li>
-                                            <a href="#"
-                                                class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Syllabus</a>
-                                        </li>
-                                        <li>
-                                            <a href="#"
-                                                class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Academic
-                                                Calendar</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </li>
-
-                            <li class="blue-tab inline-block py-2"">
-                                <a href=" #" class="block px-3 text-white" aria-current="page">Act</a>
-                            </li>
-
-                            <li class="blue-tab inline-block py-2"">
-                                <a href=" #" class="block px-3 text-white" aria-current="page">Circular</a>
-                            </li>
-
-                            <li class="blue-tab inline-block py-2"">
-                                <a href=" #" class="block px-3 text-white" aria-current="page">Notification</a>
-                            </li>
-
-                            <li class="blue-tab inline-block py-2"">
-                                <a href=" #" class="block px-3 text-white" aria-current="page">Letter</a>
-                            </li>
-
-                            <li class="blue-tab inline-block py-2"">
-                                <a href=" #" class="block px-3 text-white" aria-current="page">Gallery</a>
-                            </li>
-                        </ul>
-                        <div class="blue-tab py-2">
-                            <a href="#" class="block px-3 text-white" aria-current="page">Login</a>
-                        </div>
-                    </div>
-                    <button data-collapse-toggle="navbar-dropdown" type="button"
-                        class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-white rounded-lg md:hidden hover:bg-gray-300 hover:text-black focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
-                        aria-controls="navbar-dropdown" aria-expanded="false">
-                        <span class="sr-only">Open main menu</span>
-                        <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
-                            viewBox="0 0 17 14">
-                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M1 1h15M1 7h15M1 13h15" />
-                        </svg>
+                    <!-- Hamburger Menu Button -->
+                    <button id="menu-btn" class="block md:hidden text-white focus:outline-none px-3"
+                        data-collapse-toggle="menu" type="button">
+                        <i class="fa-solid fa-bars text-2xl"></i>
                     </button>
-                </div>
-            </nav>
+
+                    <!-- Navbar Links -->
+                    <ul id="menu"
+                        class="flex flex-col md:flex-row absolute md:static top-8 left-0 w-full md:w-auto bg-primary-blue z-10">
+
+                        <li class="px-3 py-2 border-b md:border-0 hover:bg-[#00548B] inline-block">
+                            <a href="#" class="block w-full md:inline">
+                                Home
+                            </a>
+                        </li>
+
+                        <li class="group relative px-3 py-2 border-b md:border-0 hover:bg-[#00548B] ">
+                            <a href="#" class="block w-max md:inline">About Us </a>
+                            <ul
+                                class="hidden group-hover:flex flex-col absolute md:absolute left-0 w-full md:w-max border-b border-[#0676BD] bg-[#00548B] z-20">
+                                <li class="hover:bg-[#0676BD]"><a href="#" class="block px-4 py-2">Vision</a></li>
+                                <li class="hover:bg-[#0676BD]"><a href="#" class="block px-4 py-2">Mission</a></li>
+                                <li class="hover:bg-[#0676BD]"><a href="#" class="block px-4 py-2">Objective</a></li>
+                            </ul>
+                        </li>
 
 
+                        <li class="group relative px-3 py-2 border-b md:border-0 hover:bg-[#00548B] ">
+                            <a href="#" class="block w-max md:inline">Organization
+                                Structure</a>
+                            <ul
+                                class="hidden group-hover:flex flex-col absolute left-0 w-full md:w-max border-b border-[#0676BD] bg-[#00548B] z-20">
+                                <li class="hover:bg-[#0676BD]"><a href="#" class="block px-4 py-2">Chancellor</a></li>
+                                <li class="hover:bg-[#0676BD]"><a href="#" class="block px-4 py-2">Vice Chancellor</a>
+                                </li>
+
+                            </ul>
+                        </li>
+
+                        <li class="group relative px-3 py-2 border-b md:border-0 hover:bg-[#00548B]">
+                            <a href="#" class="block w-max md:inline">Affiliation</a>
+                            <ul
+                                class="hidden group-hover:flex flex-col absolute left-0 w-full md:w-max border-b border-[#0676BD] bg-[#00548B] z-20">
+                                <li class="hover:bg-[#0676BD]"><a href="#" class="block px-4 py-2">Affiliated
+                                        Colleges</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="group relative px-3 py-2 border-b md:border-0 hover:bg-[#00548B] ">
+                            <a href="#" class="block w-max md:inline">Academics</a>
+                            <ul
+                                class="hidden group-hover:flex flex-col absolute md:absolute left-0 md:w-max w-full border-b border-[#0676BD] bg-[#00548B] z-20">
+                                <li class="hover:bg-[#0676BD]"><a href="#" class="block px-4 py-2">Programs</a></li>
+                                <li class="hover:bg-[#0676BD]"><a href="#" class="block px-4 py-2">Board of Studies</a>
+                                </li>
+                                <li class="hover:bg-[#0676BD]"><a href="#" class="block px-4 py-2">Syllabus</a></li>
+                                <li class="hover:bg-[#0676BD]"><a href="#" class="block px-4 py-2">Academic Calendar</a>
+                                </li>
+
+                            </ul>
+                        </li>
+
+                        <li class="px-3 py-2 border-b md:border-0 hover:bg-[#00548B] inline-block">
+                            <a href="#" class="block w-full md:inline">
+                                Act
+                            </a>
+                        </li>
+
+                        <li class="px-3 py-2 border-b md:border-0 hover:bg-[#00548B] inline-block">
+                            <a href="#" class="block w-full md:inline">
+                                Circular
+                            </a>
+                        </li>
+
+                        <li class="px-3 py-2 border-b md:border-0 hover:bg-[#00548B] inline-block">
+                            <a href="#" class="block w-full md:inline">
+                                Notification
+                            </a>
+                        </li>
+
+                        <li class="px-3 py-2 border-b md:border-0 hover:bg-[#00548B] inline-block">
+                            <a href="#" class="block w-full md:inline">
+                                Letter
+                            </a>
+                        </li>
+
+                        <li class="px-3 py-2 border-b md:border-0 hover:bg-[#00548B] inline-block">
+                            <a href="#" class="block w-full md:inline">
+                                Gallery
+                            </a>
+                        </li>
+
+                    </ul>
+                </nav>
+            </section>
         </header>
 
         <section class="flex lg:h-80 flex-col lg:flex-row">
 
-            <div class="lg:w-[70%] lg:h-full">
+            <div class="lg:w-[60%] lg:h-full">
                 <div id="carouselExampleCrossfade" class="relative h-auto" data-twe-carousel-init
                     data-twe-ride="carousel">
                     <!--Carousel indicators-->
@@ -306,117 +240,118 @@
 
             </div>
 
-            <article class="lg:w-[30%] h-full">
+            <article class="lg:w-[40%] h-full">
                 <div class="flex flex-col md:flex-row h-full overflow-hidden
             ">
                     <div class="flex-1 bg-blue-200 font-secondary-color">
-                        <h2 class="font-bold relative bg-primary-blue text-white p-2">
-                            Important Information
-                            <!-- <div class="text-center font-secondary-color">
-                            </div> -->
-                            <!-- <div class="bg-primary-blue h-1 rounded-md w-[15%] mt-1"></div> -->
-                        </h2>
-                        <!-- <div class="bg-secondary-blue h-0.5 w-[80%] mx-auto my-3 md:my-5"></div> -->
+                        <div class="flex justify-between items-center p-2 bg-secondary-blue ">
+                            <h3 class="font-bold relative text-white">
+                                Important Information
+                            </h3>
+                            <div class="flex gap-1 items-center text-[#fd992e]">
+                                <button><i class="fa-solid fa-angle-down"></i></button>
+                                <button><i class="fa-solid fa-angle-up"></i></button>
+                            </div>
+                        </div>
                         <div class="w-full py-1 px-2 text-xs md:text-sm">
-                            <div class="flex justify-between items-center">
-                                <div class="flex items-center gap-3 text-xs">
+                            <div class="flex justify-between items-center py-1 border-b border-dotted border-[#0676BD]">
+                                <div class="flex items-center gap-3 text-sm">
                                     <img src="./assets/double-quote.png" alt="double-quote" class="w-5" />
-                                    <p>PHD Notification</p>
+                                    <p class="hover:text-[#0676BD] hover:underline cursor-pointer">PHD Notification</p>
                                 </div>
-                                <div class="gradient p-1 rounded-md font-semibold text-white text-xs">NEW</div>
+                                <div class="gradient px-1 py-0.5 rounded-md font-semibold text-white text-[10px]">NEW
+                                </div>
                             </div>
                         </div>
 
                         <div class="w-full py-1 px-2 text-xs md:text-sm">
-                            <div class="flex justify-between items-center">
-                                <div class="flex items-center gap-3 text-xs">
+                            <div class="flex justify-between items-center py-1 border-b border-dotted border-[#0676BD]">
+                                <div class="flex items-center gap-3 text-sm">
                                     <img src="./assets/double-quote.png" alt="double-quote" class="w-5" />
-                                    <p>PHD Notification</p>
+                                    <p class="hover:text-[#0676BD] hover:underline cursor-pointer">PHD Notification</p>
                                 </div>
-                                <div class="gradient p-1 rounded-md font-semibold text-white text-xs">NEW</div>
+                                <div class="gradient px-1 py-0.5 rounded-md font-semibold text-white text-[10px]">NEW
+                                </div>
                             </div>
                         </div>
 
                         <div class="w-full py-1 px-2 text-xs md:text-sm">
-                            <div class="flex justify-between items-center">
-                                <div class="flex items-center gap-3 text-xs">
+                            <div class="flex justify-between items-center py-1 border-b border-dotted border-[#0676BD]">
+                                <div class="flex items-center gap-3 text-sm">
                                     <img src="./assets/double-quote.png" alt="double-quote" class="w-5" />
-                                    <p>PHD Notification</p>
+                                    <p class="hover:text-[#0676BD] hover:underline cursor-pointer">PHD Notification</p>
                                 </div>
-                                <div class="gradient p-1 rounded-md font-semibold text-white text-xs">NEW</div>
+                                <div class="gradient px-1 py-0.5 rounded-md font-semibold text-white text-[10px]">NEW
+                                </div>
                             </div>
                         </div>
 
                         <div class="w-full py-1 px-2 text-xs md:text-sm">
-                            <div class="flex justify-between items-center">
-                                <div class="flex items-center gap-3 text-xs">
+                            <div class="flex justify-between items-center py-1 border-b border-dotted border-[#0676BD]">
+                                <div class="flex items-center gap-3 text-sm">
                                     <img src="./assets/double-quote.png" alt="double-quote" class="w-5" />
-                                    <p>PHD Notification</p>
+                                    <p class="hover:text-[#0676BD] hover:underline cursor-pointer">PHD Notification</p>
                                 </div>
-                                <div class="gradient p-1 rounded-md font-semibold text-white text-xs">NEW</div>
+                                <div class="gradient px-1 py-0.5 rounded-md font-semibold text-white text-[10px]">NEW
+                                </div>
                             </div>
                         </div>
 
                         <div class="w-full py-1 px-2 text-xs md:text-sm">
-                            <div class="flex justify-between items-center">
-                                <div class="flex items-center gap-3 text-xs">
+                            <div class="flex justify-between items-center py-1 border-b border-dotted border-[#0676BD]">
+                                <div class="flex items-center gap-3 text-sm">
                                     <img src="./assets/double-quote.png" alt="double-quote" class="w-5" />
-                                    <p>PHD Notification</p>
+                                    <p class="hover:text-[#0676BD] hover:underline cursor-pointer">PHD Notification</p>
                                 </div>
-                                <div class="gradient p-1 rounded-md font-semibold text-white text-xs">NEW</div>
-                            </div>
-                        </div>
-
-                        <div class="w-full py-1 px-2 text-xs md:text-sm">
-                            <div class="flex justify-between items-center">
-                                <div class="flex items-center gap-3 text-xs">
-                                    <img src="./assets/double-quote.png" alt="double-quote" class="w-5" />
-                                    <p>PHD Notification</p>
+                                <div class="gradient px-1 py-0.5 rounded-md font-semibold text-white text-[10px]">NEW
                                 </div>
-                                <div class="gradient p-1 rounded-md font-semibold text-white text-xs">NEW</div>
                             </div>
                         </div>
                     </div>
 
+
+
                     <div class="flex-1 bg-[#FAF2BA] font-secondary-color flex flex-col">
-                        <h2 class="font-bold relative bg-[#fced80] font-secondary-color p-2">
-                            Notice Board
-                            <!-- <div class="text-center font-secondary-color">
-                            </div> -->
-                            <!-- <div class="bg-primary-blue h-1 rounded-md w-[15%] mt-1"></div> -->
-                        </h2>
-                        <!-- <div class="bg-secondary-blue h-0.5 w-[80%] mx-auto my-3 md:my-5"></div> -->
+                        <div class="flex justify-between items-center p-2 bg-[#fced80]  ">
+                            <h3 class="font-bold relative font-secondary-color">
+                                Notice Board
+                            </h3>
+                            <div class="flex gap-1 items-center text-[#fd992e] font-bold">
+                                <button><i class="fa-solid fa-angle-down"></i></button>
+                                <button><i class="fa-solid fa-angle-up"></i></button>
+                            </div>
+                        </div>
                         <div class="flex flex-col justify-between gap-2 h-full p-2">
                             <div id="notice-board">
                                 <ol class="font-semibold text-xs [&>li]:py-1">
-                                    <li class="dotted-blue-border">1.
+                                    <li class="dotted-blue-border hover:underline hover:text-[#0676BD]">1.
                                         <a href="http://www.beu-bih.ac.in/BEUP/NoticePdf/08Mar202515140000.pdf">Academic
                                             Schedule
                                             for 5th Semester</a>
                                     </li>
-                                    <li class="dotted-blue-border">2.
+                                    <li class="dotted-blue-border hover:underline hover:text-[#0676BD]">2.
                                         <a href="http://www.beu-bih.ac.in/BEUP/NoticePdf/05Mar202513022128.pdf">List of
                                             Qualified
                                             Students for PH.D. Admission Written Test</a>
                                     </li>
-                                    <li class="dotted-blue-border">3.
+                                    <li class="dotted-blue-border hover:underline hover:text-[#0676BD]">3.
                                         <a href="http://www.beu-bih.ac.in/BEUP/NoticePdf/25Feb202516225576.pdf">
                                             Notice
                                         </a>
                                     </li>
-                                    <li class="dotted-blue-border">4.
+                                    <li class="dotted-blue-border hover:underline hover:text-[#0676BD]">4.
                                         <a href="http://www.beu-bih.ac.in/BEUP/NoticePdf/15Feb202514581226.pdf">
                                             Notice for Ph.D. Written Test
                                         </a>
                                     </li>
 
-                                    <li class="dotted-blue-border">5.
+                                    <li class="dotted-blue-border hover:underline hover:text-[#0676BD]">5.
                                         <a href="http://www.beu-bih.ac.in/BEUP/NoticePdf/05Feb202518220173.pdf">
                                             4th Semester Examination 2024 Program
                                         </a>
                                     </li>
 
-                                    <li class="dotted-blue-border">6.
+                                    <li class="dotted-blue-border hover:underline hover:text-[#0676BD]">6.
                                         <a href="http://www.beu-bih.ac.in/BEUP/NoticePdf/05Feb202518224038.pdf">
                                             7th Semester Examination 2024 Program
                                         </a>
@@ -437,28 +372,47 @@
 
         </section>
 
-        <article class="bg-secondary-blue text-white flex 
-                [&>*]:py-3">
-            <div class="bg-secondary-blue text-white px-4 z-10">
+        <article class="flex flex-col md:flex-row 
+                [&>*]:py-3 border-y-4 border-dashed border-[#00548B]">
+            <div class="bg-secondary-blue text-white px-6 z-10 font-semibold">
                 Notices:
             </div>
             <div class="min-w-max">
-                <div class="marquee [&>span]:p-5">
-                    <span>
-                        PHD Notification
-                    </span>
-                    <span>
-                        Admission Opens
-                    </span>
-                    <span>
-                        Registration opens for all batches
-                    </span>
-                    <span>
-                        Placements will starts from April
-                    </span>
-                    <span>
-                        Mega coding events coming up
-                    </span>
+                <div class="marquee [&_span]:p-5 [&_span]:font-semibold [&_span]:text-[#00548B] [&_p]:inline-block">
+                    <p>||
+                        <span>
+                            PHD Notification
+                        </span>
+                    </p>
+                    <p>||
+                        <span>
+                            Admission Opens
+                        </span>
+                    </p>
+
+                    <p>
+                        ||
+                        <span>
+                            Registration opens for all batches
+                        </span>
+
+                    </p>
+
+                    <p>
+                        ||
+                        <span>
+                            Placements will starts from April
+                        </span>
+
+                    </p>
+
+                    <p>
+                        ||
+                        <span>
+                            Mega coding events coming up
+                        </span>
+
+                    </p>
                 </div>
             </div>
 
@@ -494,13 +448,13 @@
         </section>
 
         <section class="flex flex-col  md:flex-row md:w-[90%] gap-10 md:gap-0 m-auto mb-10">
-            <div class="flex-1 p-5">
+            <div class="flex-1 md:p-5">
                 <h2 class="text-center text-xl md:text-3xl font-semibold font-secondary-color">
                     Student Section
-                    <!-- <div class="bg-primary-blue h-1 rounded-md w-[15%] mt-1"></div> -->
                 </h2>
                 <div class="bg-secondary-blue h-0.5 w-[80%] mx-auto my-3 md:my-5"></div>
-                <div class="grid grid-cols-3 gap-1 md:gap-x-3 md:gap-y-4 w-[60%] m-auto [&_p]:text-xs mt-4 md:mt-8">
+                <div
+                    class="grid grid-cols-3 gap-4 md:gap-x-3 md:gap-y-4 w-[80%] md:w-[60%] m-auto [&_p]:text-xs mt-4 md:mt-8">
                     <div class="h-24 md:h-32 border-b-[1px] md:border-b-2 border-[#00548B] cursor-pointer">
                         <div class="h-[80%] w-full">
                             <img src="./assets/computer.png" alt="" class="w-full h-full object-contain">
@@ -568,15 +522,14 @@
 
                 </div>
             </div>
-            <div class="flex-1 p-5">
+            <div class="flex-1 md:p-5">
                 <h2 class="text-center text-xl md:text-3xl font-semibold font-secondary-color">
                     Our Mentors
-                    <!-- <div class="bg-primary-orange h-1 rounded-md w-[15%] mt-1"></div> -->
                 </h2>
                 <div class="bg-secondary-blue h-0.5 w-[80%] mx-auto my-3 md:my-5"></div>
                 <div class="w-[80%] md:w-[60%] m-auto [&_p]:text-xs">
                     <div class="w-full flex pb-1 gap-2">
-                        <div class="h-40 md:h-36">
+                        <div class="h-36">
                             <img src="./assets/CM.png" alt="" class="w-full h-full">
                         </div>
                         <div class="w-[70%] place-content-end font-secondary-color border-b-2 border-blue-900">
@@ -587,7 +540,7 @@
                     </div>
 
                     <div class="w-full flex pb-1 gap-2">
-                        <div class="h-40 md:h-36">
+                        <div class="h-36">
                             <img src="./assets/MinisterDSTTE.png" alt="" class="w-full h-full">
                         </div>
                         <div class="w-[70%] place-content-end font-secondary-color border-b-2 border-blue-900 text-sm">
@@ -598,7 +551,7 @@
                     </div>
 
                     <div class="w-full flex pb-1 gap-2">
-                        <div class="h-40 md:h-36 ">
+                        <div class="h-36 ">
                             <img src="./assets/MinisterDSTTE.png" alt="" class="w-full h-full">
                         </div>
                         <div class="w-[70%] place-content-end font-secondary-color border-b-2 border-blue-900">
@@ -607,25 +560,13 @@
                             <p>Bihar Engineering University</p>
                         </div>
                     </div>
-
-                    <!-- <div class="w-full flex pb-1 gap-2">
-                        <div class="w-[30%] h-28">
-                            <img src="./assets/EducationMinister.webp" alt="" class="w-full h-full object-cover">
-                        </div>
-                        <div class="w-[70%] place-content-end  font-secondary-color border-b-2 border-blue-900">
-                            <p>Prof. Suresh Kant Verma</p>
-                            <p>Vice Chancellor</p>
-                            <p>Bihar Engineering University</p>
-                        </div>
-                    </div> -->
                 </div>
             </div>
         </section>
 
         <section class="md:w-[90%] m-auto mb-10">
-            <h2 class="text-center text-xl md:text-3xl font-semibold p-5 font-secondary-color">
+            <h2 class="text-center text-xl md:text-3xl font-semibold md:p-5 font-secondary-color">
                 Program Details
-                <!-- <div class="bg-primary-orange h-1 rounded-md w-[15%] mt-1"></div> -->
             </h2>
             <div class="bg-secondary-blue h-0.5 w-[80%] mx-auto my-3 md:my-5"></div>
 
@@ -633,7 +574,7 @@
 
                 <!-- Card -->
                 <div
-                    class="flex flex-col h-full bg-white border border-slate-200 shadow shadow-slate-950/5 rounded-2xl overflow-hidden">
+                    class="flex flex-col h-full bg-white border border-slate-200 shadow shadow-slate-950/5 rounded-2xl overflow-hidden bg-primary-blue">
                     <!-- Image -->
                     <img class="object-cover h-40 md:h-48 w-full"
                         src="./assets/bakhtiyarpur-college-of-engineering-bakhtiarpur-patna-colleges-Z1Xp52eGd3.webp"
