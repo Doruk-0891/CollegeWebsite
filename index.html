@@ -313,121 +313,114 @@
                 <div class="flex flex-col md:flex-row h-full overflow-hidden
             ">
                     <div class="flex-1 bg-blue-200 font-secondary-color">
-                        <div class="flex justify-between items-center p-2 bg-secondary-blue ">
+                        <div class="flex justify-between items-center p-2 bg-secondary-blue">
                             <h3 class="font-bold relative text-white">
                                 Important Information
                             </h3>
-                            <div class="flex gap-1 items-center text-[#fd992e]">
-                                <button><i class="fa-solid fa-angle-down"></i></button>
-                                <button><i class="fa-solid fa-angle-up"></i></button>
-                            </div>
-                        </div>
-                        <div class="w-full py-1 px-2 text-xs md:text-sm">
-                            <div class="flex justify-between items-center py-1 border-b border-dotted border-[#0676BD]">
-                                <div class="flex items-center gap-3 text-sm">
-                                    <img src="./assets/double-quote.png" alt="double-quote" class="w-5" />
-                                    <p class="hover:text-[#0676BD] hover:underline cursor-pointer">PHD Notification</p>
-                                </div>
-                                <div class="gradient px-1 py-0.5 rounded-md font-semibold text-white text-[10px]">NEW
-                                </div>
+                            <div class="flex gap-1 items-center text-[#fd992e] font-bold">
+                                <button onclick="moveDown('important-information')"
+                                    class="focus:border-none focus:outline-none">
+                                    <i class="fa-solid fa-angle-down"></i>
+                                </button>
+                                <button onclick="moveUp('important-information')"
+                                    class="focus:border-none focus:outline-none">
+                                    <i class="fa-solid fa-angle-up"></i>
+                                </button>
                             </div>
                         </div>
 
-                        <div class="w-full py-1 px-2 text-xs md:text-sm">
-                            <div class="flex justify-between items-center py-1 border-b border-dotted border-[#0676BD]">
-                                <div class="flex items-center gap-3 text-sm">
-                                    <img src="./assets/double-quote.png" alt="double-quote" class="w-5" />
-                                    <p class="hover:text-[#0676BD] hover:underline cursor-pointer">PHD Notification</p>
-                                </div>
-                                <div class="gradient px-1 py-0.5 rounded-md font-semibold text-white text-[10px]">NEW
-                                </div>
-                            </div>
+                        <div class="px-2 py-1 overflow-hidden h-40">
+                            <ul id="important-information" class="transition-transform duration-500 ease-in-out overflow-hidden">
+                                <li
+                                    class="flex justify-between items-center py-1 border-b border-dotted border-[#0676BD]">
+                                    <div class="flex items-center gap-3 text-sm">
+                                        <img src="./assets/double-quote.png" alt="double-quote" class="w-5" />
+                                        <p class="hover:text-[#0676BD] hover:underline cursor-pointer">PHD Notification
+                                        </p>
+                                    </div>
+                                    <div class="gradient px-1 py-0.5 rounded-md font-semibold text-white text-[10px]">
+                                        NEW</div>
+                                </li>
+                                <li
+                                    class="flex justify-between items-center py-1 border-b border-dotted border-[#0676BD]">
+                                    <div class="flex items-center gap-3 text-sm">
+                                        <img src="./assets/double-quote.png" alt="double-quote" class="w-5" />
+                                        <p class="hover:text-[#0676BD] hover:underline cursor-pointer">PHD Notification
+                                        </p>
+                                    </div>
+                                    <div class="gradient px-1 py-0.5 rounded-md font-semibold text-white text-[10px]">
+                                        NEW</div>
+                                </li>
+                                <li
+                                    class="flex justify-between items-center py-1 border-b border-dotted border-[#0676BD]">
+                                    <div class="flex items-center gap-3 text-sm">
+                                        <img src="./assets/double-quote.png" alt="double-quote" class="w-5" />
+                                        <p class="hover:text-[#0676BD] hover:underline cursor-pointer">PHD Notification
+                                        </p>
+                                    </div>
+                                    <div class="gradient px-1 py-0.5 rounded-md font-semibold text-white text-[10px]">
+                                        NEW</div>
+                                </li>
+                                <li
+                                    class="flex justify-between items-center py-1 border-b border-dotted border-[#0676BD]">
+                                    <div class="flex items-center gap-3 text-sm">
+                                        <img src="./assets/double-quote.png" alt="double-quote" class="w-5" />
+                                        <p class="hover:text-[#0676BD] hover:underline cursor-pointer">PHD Notification
+                                        </p>
+                                    </div>
+                                    <div class="gradient px-1 py-0.5 rounded-md font-semibold text-white text-[10px]">
+                                        NEW</div>
+                                </li>
+                            </ul>
                         </div>
 
-                        <div class="w-full py-1 px-2 text-xs md:text-sm">
-                            <div class="flex justify-between items-center py-1 border-b border-dotted border-[#0676BD]">
-                                <div class="flex items-center gap-3 text-sm">
-                                    <img src="./assets/double-quote.png" alt="double-quote" class="w-5" />
-                                    <p class="hover:text-[#0676BD] hover:underline cursor-pointer">PHD Notification</p>
-                                </div>
-                                <div class="gradient px-1 py-0.5 rounded-md font-semibold text-white text-[10px]">NEW
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="w-full py-1 px-2 text-xs md:text-sm">
-                            <div class="flex justify-between items-center py-1 border-b border-dotted border-[#0676BD]">
-                                <div class="flex items-center gap-3 text-sm">
-                                    <img src="./assets/double-quote.png" alt="double-quote" class="w-5" />
-                                    <p class="hover:text-[#0676BD] hover:underline cursor-pointer">PHD Notification</p>
-                                </div>
-                                <div class="gradient px-1 py-0.5 rounded-md font-semibold text-white text-[10px]">NEW
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="w-full py-1 px-2 text-xs md:text-sm">
-                            <div class="flex justify-between items-center py-1 border-b border-dotted border-[#0676BD]">
-                                <div class="flex items-center gap-3 text-sm">
-                                    <img src="./assets/double-quote.png" alt="double-quote" class="w-5" />
-                                    <p class="hover:text-[#0676BD] hover:underline cursor-pointer">PHD Notification</p>
-                                </div>
-                                <div class="gradient px-1 py-0.5 rounded-md font-semibold text-white text-[10px]">NEW
-                                </div>
-                            </div>
-                        </div>
                     </div>
 
 
 
                     <div class="flex-1 bg-[#FAF2BA] font-secondary-color flex flex-col">
-                        <div class="flex justify-between items-center p-2 bg-[#fced80]  ">
+                        <div class="flex justify-between items-center p-2 bg-[#fced80]">
                             <h3 class="font-bold relative font-secondary-color">
                                 Notice Board
                             </h3>
                             <div class="flex gap-1 items-center text-[#fd992e] font-bold">
-                                <button><i class="fa-solid fa-angle-down"></i></button>
-                                <button><i class="fa-solid fa-angle-up"></i></button>
+                                <button onclick="moveDown('notice-board')" class="focus:border-none focus:outline-none">
+                                    <i class="fa-solid fa-angle-down"></i>
+                                </button>
+                                <button onclick="moveUp('notice-board')" class="focus:border-none focus:outline-none">
+                                    <i class="fa-solid fa-angle-up"></i>
+                                </button>
                             </div>
                         </div>
-                        <div class="flex flex-col justify-between gap-2 h-full p-2">
-                            <div id="notice-board">
-                                <ol class="font-semibold text-sm [&>li]:py-1">
-                                    <li class="dotted-blue-border hover:underline hover:text-[#0676BD]">1.
-                                        <a href="http://www.beu-bih.ac.in/BEUP/NoticePdf/08Mar202515140000.pdf">Academic
-                                            Schedule
-                                            for 5th Semester</a>
-                                    </li>
-                                    <li class="dotted-blue-border hover:underline hover:text-[#0676BD]">2.
-                                        <a href="http://www.beu-bih.ac.in/BEUP/NoticePdf/05Mar202513022128.pdf">List of
-                                            Qualified
-                                            Students for PH.D. Admission Written Test</a>
-                                    </li>
-                                    <li class="dotted-blue-border hover:underline hover:text-[#0676BD]">3.
-                                        <a href="http://www.beu-bih.ac.in/BEUP/NoticePdf/25Feb202516225576.pdf">
-                                            Notice
-                                        </a>
-                                    </li>
-                                    <li class="dotted-blue-border hover:underline hover:text-[#0676BD]">4.
-                                        <a href="http://www.beu-bih.ac.in/BEUP/NoticePdf/15Feb202514581226.pdf">
-                                            Notice for Ph.D. Written Test
-                                        </a>
-                                    </li>
 
-                                    <li class="dotted-blue-border hover:underline hover:text-[#0676BD]">5.
-                                        <a href="http://www.beu-bih.ac.in/BEUP/NoticePdf/05Feb202518220173.pdf">
-                                            4th Semester Examination 2024 Program
-                                        </a>
-                                    </li>
 
-                                    <li class="dotted-blue-border hover:underline hover:text-[#0676BD]">6.
-                                        <a href="http://www.beu-bih.ac.in/BEUP/NoticePdf/05Feb202518224038.pdf">
-                                            7th Semester Examination 2024 Program
-                                        </a>
-                                    </li>
-
-                                </ol>
-                            </div>
+                        <div class="overflow-hidden h-40 p-2">
+                            <ol id="notice-board"
+                                class="font-semibold text-sm [&>li]:py-1 transition-transform duration-500 ease-in-out">
+                                <li class="dotted-blue-border hover:underline hover:text-[#0676BD]">1.
+                                    <a href="http://www.beu-bih.ac.in/BEUP/NoticePdf/08Mar202515140000.pdf">Academic
+                                        Schedule for 5th Semester</a>
+                                </li>
+                                <li class="dotted-blue-border hover:underline hover:text-[#0676BD]">2.
+                                    <a href="http://www.beu-bih.ac.in/BEUP/NoticePdf/05Mar202513022128.pdf">List of
+                                        Qualified Students for PH.D. Admission Written Test</a>
+                                </li>
+                                <li class="dotted-blue-border hover:underline hover:text-[#0676BD]">3.
+                                    <a href="http://www.beu-bih.ac.in/BEUP/NoticePdf/25Feb202516225576.pdf">Notice</a>
+                                </li>
+                                <li class="dotted-blue-border hover:underline hover:text-[#0676BD]">4.
+                                    <a href="http://www.beu-bih.ac.in/BEUP/NoticePdf/15Feb202514581226.pdf">Notice
+                                        for Ph.D. Written Test</a>
+                                </li>
+                                <li class="dotted-blue-border hover:underline hover:text-[#0676BD]">5.
+                                    <a href="http://www.beu-bih.ac.in/BEUP/NoticePdf/05Feb202518220173.pdf">4th
+                                        Semester Examination 2024 Program</a>
+                                </li>
+                                <li class="dotted-blue-border hover:underline hover:text-[#0676BD]">6.
+                                    <a href="http://www.beu-bih.ac.in/BEUP/NoticePdf/05Feb202518224038.pdf">7th
+                                        Semester Examination 2024 Program</a>
+                                </li>
+                            </ol>
                         </div>
                     </div>
                 </div>
@@ -768,56 +761,39 @@
 
         <section class="md:w-[90%] m-auto mb-10 bg-[#FAF2BA]">
 
-            <div class="flex justify-between items-center px-4 py-2 bg-[#fced80]  ">
+            <div class="flex justify-between items-center px-4 py-2 bg-[#fced80] z-10 ">
                 <h3 class="font-bold relative font-secondary-color text-center text-xl md:text-2xl ">
                     College Events
                 </h3>
                 <div class="flex gap-1 items-center text-[#fd992e] text-lg md:text-xl
                      font-bold">
-                    <button><i class="fa-solid fa-angle-down"></i></button>
-                    <button><i class="fa-solid fa-angle-up"></i></button>
+                    <button onclick="moveDown('scrollingList3')" class="focus:border-none focus:outline-none"><i
+                            class="fa-solid fa-angle-down"></i></button>
+                    <button onclick="moveUp('scrollingList3')" class="focus:border-none focus:outline-none"><i
+                            class="fa-solid fa-angle-up"></i></button>
                 </div>
             </div>
 
-            <div class="px-4 py-2">
-                <ul class="[&>li]:text-xs [&>li]:md:text-sm [&_img]:w-5 [&_img]:md:w-8 [&_div]:p-1 [&_div]:md:p-2">
-                    <li class="flex gap-3 items-center text-sm py-2">
-                        <img src="./assets/double-quote.png" alt="" class="w-8 ">
-
-                        "Five-Day National Workshop on Research Methodology" on February 24, 2025, to March 1, 2025 at
-                        Ashoka Institute of Technology And Management
+            <div class="px-4 py-2 overflow-hidden h-52">
+                <ul id="scrollingList3"
+                    class="overflow-hidden [&>li]:text-xs [&>li]:md:text-sm [&_img]:w-5 [&_img]:md:w-8 [&_div]:p-1 [&_div]:md:p-2 transition-transform duration-500 ease-in-out">
+                    <li class="flex gap-3 items-center text-sm py-2"> <img src="./assets/double-quote.png" alt=""
+                            class="w-8 "> "Five-Day National Workshop on Research Methodology" on February 24, 2025, to
+                        March 1, 2025 at Ashoka Institute of Technology And Management </li>
+                    <li class="flex gap-3 items-center text-sm py-2"> <img src="./assets/double-quote.png" alt=""
+                            class="w-8 "> Apeejay Festival of Ideas by Ignited Minds: 21st and 22nd Feb 2025 <div
+                            class="gradient md:p-2 rounded-md font-semibold text-white text-xs">NEW</div>
                     </li>
-
-                    <li class="flex gap-3 items-center text-sm py-2">
-                        <img src="./assets/double-quote.png" alt="" class="w-8 ">
-
-                        Apeejay Festival of Ideas by ignited Minds: 21st and 22nd Feb 2025
-                        <div class="gradient md:p-2 rounded-md font-semibold text-white text-xs">NEW</div>
-                    </li>
-
-                    <li class="flex gap-3 items-center text-sm py-2">
-                        <img src="./assets/double-quote.png" alt="" class="w-8 ">
-
-                        CIPET: IPT-Lucknow is organizing the 16th International Conference on Advancements in Polymeric
-                        Materials (APM-2025) on the theme "Advancements in the Petrochemical Sector & Empowering
-                        Sustainable Development Leading to 'Viksit Bharat'", : 8th to 10th March, 2025
-                    </li>
-
-                    <li class="flex gap-3 items-center text-sm py-2">
-                        <img src="./assets/double-quote.png" alt="" class="w-8 ">
-
-                        "Transformative Trends in Drug Discovery and Delivery: Exploring Next-Generation Therapeutics
-                        and Technologies": 21st and 22nd March 2025
-                        <div class="gradient md:p-2 rounded-md font-semibold text-white text-xs">NEW</div>
-                    </li>
-
-                    <li class="flex gap-3 items-center text-sm py-2">
-                        <img src="./assets/double-quote.png" alt="" class="w-8 ">
-
-                        Apeejay Festival of Ideas by ignited Minds: 21st and 22nd Feb 2025
-                        <div class="gradient md:p-2 rounded-md font-semibold text-white text-xs">NEW</div>
+                    <li class="flex gap-3 items-center text-sm py-2"> <img src="./assets/double-quote.png" alt=""
+                            class="w-8 "> CIPET: IPT-Lucknow is organizing the 16th International Conference on
+                        Advancements in Polymeric Materials (APM-2025)... </li>
+                    <li class="flex gap-3 items-center text-sm py-2"> <img src="./assets/double-quote.png" alt=""
+                            class="w-8 "> "Transformative Trends in Drug Discovery and Delivery: Exploring
+                        Next-Generation Therapeutics and Technologies": 21st and 22nd March 2025 <div
+                            class="gradient md:p-2 rounded-md font-semibold text-white text-xs">NEW</div>
                     </li>
                 </ul>
+                
             </div>
 
 
@@ -874,6 +850,45 @@
         document.getElementById('menu-btn').addEventListener('click', function () {
             document.getElementById('menu').classList.toggle('hidden');
         });
+
+        function moveUp(listId) {
+            let list = document.getElementById(listId);
+            let items = list.children;
+            const height = items[0].offsetHeight * -1;
+            list.style.transition = "transform 0.5s ease-in-out";
+            list.style.transform = `translateY(${height}px)`;
+            setTimeout(() => {
+                list.appendChild(items[0].cloneNode(true));
+                list.removeChild(items[0]);
+                list.style.transition = "none";
+                list.style.transform = "translateY(0)";
+            }, 500);
+        }
+
+        function moveDown(listId) {
+            let list = document.getElementById(listId);
+            let items = list.children;
+            let lastItem = items[items.length - 1].cloneNode(true);
+            list.insertBefore(lastItem, items[0]);
+            list.style.transition = "none";
+            list.style.transform = "translateY(-40px)";
+            setTimeout(() => {
+                list.style.transition = "transform 0.5s ease-in-out";
+                list.style.transform = "translateY(0)";
+                setTimeout(() => {
+                    list.removeChild(items[items.length - 1]);
+                }, 500);
+            }, 10);
+        }
+
+        function autoScroll(listId) {
+            moveUp(listId);
+            setTimeout(() => autoScroll(listId), 3000);
+        }
+
+        autoScroll("important-information");
+        autoScroll("notice-board");
+        autoScroll("scrollingList3");
     </script>
     <script src="https://cdn.jsdelivr.net/npm/tw-elements/js/tw-elements.umd.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
